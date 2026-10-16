@@ -4,91 +4,184 @@
 
 This project reverse-engineers the Packet Tracer container format and provides a byte-exact codec plus a Python generator for devices, modules, cabling, IOS config, PC IPs, instructions, activity passwords, and scoring data.
 
+[![PyPI - Version](https://img.shields.io/pypi/v/pkt-core.svg)](https://pypi.org/project/pkt-core/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
-[![No Packet Tracer needed](https://img.shields.io/badge/Packet_Tracer-not_required-32d74b.svg)](#quickstart)
+[![No Packet Tracer needed](https://img.shields.io/badge/Packet_Tracer-not_required-32d74b.svg)](#quick-start)
 [![Cisco Packet Tracer](https://img.shields.io/badge/Cisco_Packet_Tracer-1BA0D7?style=flat&logo=cisco&logoColor=white)](#overview)
+
+> **`pkt-core v0.2.0` is published on PyPI**: [https://pypi.org/project/pkt-core/](https://pypi.org/project/pkt-core/)
 
 ## Overview
 
-Packet Tracer files have no useful magic header and are fully encrypted, so `file`, `strings`, and hex dumps mostly show noise. This repository documents the format and ships tools that read, build, diff, and repack `.pkt` and `.pka` files.
+Packet Tracer files have no plain-text magic header and are fully encrypted containers, making offline analysis and generation challenging. `pkt-core` reverse-engineers the container formats and provides a production-ready Python SDK and byte-exact codec.
+
+With `pkt-core`, you can **programmatically generate, modify, and inspect complete Packet Tracer `.pkt` network labs and scored `.pka` activities entirely offline**—without installing Cisco Packet Tracer and without manually constructing the underlying XML structure or cryptographic containers.
 
 ## Highlights
 
-* Build labs directly from Python.
-* Generate scored, password-protected activities from the CLI.
-* Decode and re-encode Packet Tracer containers byte-for-byte.
-* Inspect device models, links, and configuration without opening Packet Tracer.
+* **Offline Generation:** Build `.pkt` labs and scored `.pka` activities directly in Python with zero external dependencies beyond Python.
+* **No XML or Crypto Boilerplate:** Bundled templates, seeds, and Twofish-EAX ciphers are managed automatically.
+* **Convenient Public API:** High-level `Lab` builder with intuitive device placement, cabling, module bay management, and IOS configuration.
+* **Lossless Inspection & Diffing:** Parse existing files into typed Pydantic models with `open_lab()` and semantically diff topologies with `diff_labs()`.
+* **Byte-Exact Codec:** Proven 100% round-trip fidelity on 1,058 real-world Packet Tracer files.
+* **CLI Included:** Inspect, unpack, pack, audit, and export labs via the `pkt` command-line utility.
 
-## Quick Start
+## Installation
+
+Install the published package from PyPI:
 
 ```bash
 pip install pkt-core
 ```
 
+> [!NOTE]
+> **Package vs Import Name:**
+> * Distribution name (for `pip`): **`pkt-core`** (`pip install pkt-core`)
+> * Import module name (in Python): **`pkt_core`** (`from pkt_core import Lab`)
+
+No native compilers or Packet Tracer installations are required. Pure-Python crypto fallbacks are bundled out-of-the-box. (Optional: `pip install pkt_core_native` provides an accelerated Rust backend).
+
+## Quick Start
+
+### 1. Create a Topology Programmatically
+
+Generate a complete `.pkt` file with a router and switch connected via copper ethernet in just 5 lines:
+
 ```python
 from pkt_core import Lab
 
 lab = Lab()
+lab.add_device("R1", "Router_2901")
+lab.add_device("SW1", "Switch_2960")
+lab.connect("R1", "GigabitEthernet0/0", "SW1", "FastEthernet0/1")
+lab.export("my_lab.pkt")
+```
 
+### 2. Configure Hardware, Modules, and IOS Configuration
+
+The SDK handles physical rack slots, canvas layouts, Cisco IOS CLI startup/running configs, and PC IP configurations seamlessly:
+
+```python
+from pkt_core import Lab
+
+# Initialize a clean lab (bundled templates and seed XML load automatically)
+lab = Lab()
+
+# Place a Cisco router with an installed serial module and IOS running configuration
 r1 = lab.add_device(
-  model="2911",
-  name="R1",
-  x=200,
-  y=250,
-  install="HWIC-2T",
-  ios_config=[
-    "interface GigabitEthernet0/0",
-    " ip address 192.168.1.1 255.255.255.0",
-    " no shutdown",
-    "end",
-  ],
+    model="2911",
+    name="R1",
+    x=200,
+    y=250,
+    install="HWIC-2T",
+    ios_config=[
+        "hostname R1",
+        "interface GigabitEthernet0/0",
+        " ip address 192.168.1.1 255.255.255.0",
+        " no shutdown",
+        "end",
+    ],
 )
 
+# Place a switch and an end-user workstation
 sw1 = lab.add_device("2960-24TT", "SW1", x=400, y=250)
 pc1 = lab.add_device(
-  model="PC-PT",
-  name="PC1",
-  x=600,
-  y=250,
-  pc_ip=("192.168.1.10", "255.255.255.0", "192.168.1.1"),
+    model="PC-PT",
+    name="PC1",
+    x=600,
+    y=250,
+    pc_ip=("192.168.1.10", "255.255.255.0", "192.168.1.1"),
 )
 
-lab.link(r1, "GigabitEthernet0/0", sw1, "GigabitEthernet0/1")
-lab.link(sw1, "FastEthernet0/1", pc1, "FastEthernet0")
-lab.save("my_lab.pkt")
+# Connect interfaces using copper cables
+lab.connect(r1, "GigabitEthernet0/0", sw1, "GigabitEthernet0/1")
+lab.connect(sw1, "FastEthernet0/1", pc1, "FastEthernet0")
+
+# Export directly to a .pkt container (sealed with Twofish-EAX AEAD)
+lab.export("my_lab.pkt")
 ```
 
-## What It Can Do
+Open `my_lab.pkt` directly in Cisco Packet Tracer — all devices, physical rack placements, cables, and IOS configurations load immediately!
+
+### 3. Open and Inspect Existing Labs
+
+Read and inspect devices, links, IP addresses, and configs without Packet Tracer:
+
+```python
+from pkt_core import open_lab
+
+lab = open_lab("my_lab.pkt")
+print(f"Loaded lab version: {lab.version}")
+
+for dev in lab.devices:
+    print(f"Device: {dev.name} ({dev.model}) at position {dev.position}")
+    for port in dev.ports:
+        print(f"  Port: {port.name} [{port.type}]")
+
+for link in lab.links:
+    print(f"Link: {link.cable_type} connecting ports {link.port_names}")
+```
+
+## Public SDK API Reference
+
+The `pkt_core` package exports a clean, type-annotated public API:
+
+| Export | Type | Description |
+|---|---|---|
+| `Lab` / `LabBuilder` | Class | High-level builder to create topologies, add devices, install modules, connect cables, apply IOS config, and export `.pkt` containers. |
+| `Activity` / `ActivityBuilder` | Class | Author scored `.pka` activities with instructions (HTML), time limits, wizard password, and comparison trees. |
+| `Layout` | Class | Layout engine providing collision-free grid placement and semantic tier bands. |
+| `open_lab(path)` | Function | Decode and parse any `.pkt` or `.pka` file into typed Pydantic models ([`LabView`](src/pkt_core/models/lab.py)). |
+| `diff_labs(lab_a, lab_b)` | Function | Perform semantic difference comparison between two lab files. |
+| `export(lab, format)` | Function | Render topology for external network tooling (`graphviz`, `containerlab`, `netbox`). |
+| `decode(path)` / `encode(path, xml)` | Function | Container codec for direct Twofish-EAX / qCompress reading and writing. |
+| `pkt_core.resources` | Module | Cached loaders for bundled data assets (`load_bundled_templates`, `load_bundled_seed_xml`, `load_bundled_device_shapes`, `load_bundled_activity_skeleton`). |
+
+### Bundled Resources
+
+The SDK packages **137 device templates**, **78 module templates**, a base network seed, and activity wizard skeletons directly inside the distribution wheel. When calling `Lab()`, these assets are loaded automatically from the package namespace (`pkt_core/data/`) with zero file-path configuration required.
+
+## Working Examples
+
+Full runnable example scripts are available in the [`examples/`](examples) directory:
+
+* [`examples/basic_topology.py`](examples/basic_topology.py): Router, switch, and PC topology with IP configuration, copper cabling, and export.
+* [`examples/serial_connection.py`](examples/serial_connection.py): Back-to-back router topology with installed `HWIC-2T` serial modules, DCE clock rates, and `/30` subnets.
+* [`examples/scored_activity.py`](examples/scored_activity.py): Scored Packet Tracer activity (`.pka`) with student instructions, automated scoring tree, and wizard password.
+
+## CLI Usage
+
+The `pkt` CLI tool is available immediately after installation:
 
 ```console
-$ python3 tools/make_scored_lab.py --out mylab.pka --spec topology.json --password hunter2
 $ pkt info my_lab.pkt
-$ pkt unpack my_lab.pkt -o out/
-$ pkt pack out/ -o rebuilt.pkt
+$ pkt audit my_lab.pkt
+$ pkt unpack my_lab.pkt -o unpacked_lab/
+$ pkt pack unpacked_lab/ -o repacked.pkt
 $ pkt diff before.pkt after.pkt
-$ pkt export my_lab.pkt -f graphviz
+$ pkt export my_lab.pkt --format graphviz
 ```
 
-## Library Snapshot
+## Library Architecture
 
-| Module | Responsibility |
+| Subpackage / Module | Responsibility |
 | --- | --- |
-| `pkt_core.crypto.primitives` | CMAC, CTR, and EAX helpers |
-| `pkt_core.crypto.keys` | Per-format key schedule |
-| `pkt_core.crypto.stream` | Positional XOR wrappers |
-| `pkt_core.crypto.ciphers_pure` | Pure-Python cipher implementations |
-| `pkt_core.codec.container` | Detect, decode, and encode containers |
-| `pkt_core.xml` | Lossless XML layer |
-| `pkt_core.models` | Typed views over labs, devices, ports, and links |
-| `pkt_core.diff` | Semantic comparison of labs |
-| `pkt_core.export` | Topology export helpers |
+| `pkt_core.builder` | `Lab`, `Activity`, and `Layout` engines for generating new labs and scored activities. |
+| `pkt_core.codec` | Verifier-based container detection, Twofish-EAX sealing/opening, and Qt `qCompress` wrappers. |
+| `pkt_core.crypto` | Pure-Python ciphers (`ciphers_pure.py`), primitive EAX/CMAC/CTR routines, and key schedules. |
+| `pkt_core.data` | Bundled device templates (`device_templates.json`), network seed XML, and activity skeletons. |
+| `pkt_core.models` | Typed Pydantic inspection models for devices, ports, links, services, and IOS running-config. |
+| `pkt_core.resources` | Cached asset loaders for embedded package data. |
+| `pkt_core.cli` | Command-line interface (`pkt info`, `unpack`, `pack`, `diff`, `export`, `audit`). |
+| `pkt_core.xml` | Lossless XML document preservation engine. |
 
-## Project Layout
+## Project Structure
 
-* `src/pkt_core/` contains the reusable library.
-* `pt9.py` is the single-file reference codec.
-* `tools/` contains the CLI utilities and generators.
-* `corpus/` tracks the verification corpus and sample files.
+* `src/pkt_core/` — Reusable, pip-installable Python SDK.
+* `examples/` — Complete, runnable SDK usage scripts.
+* `tests/` — Automated test suite (112+ unit and integration tests).
+* `tools/` — Developer utilities and legacy migration shims.
+* `corpus/` — Verification corpus manifest and sample files.
 
 ## Notes
 

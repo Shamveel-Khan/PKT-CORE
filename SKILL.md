@@ -41,15 +41,33 @@ plumbing, and it is the one that reports "corrupted Physical Workspace data".
 - Convert a topology to graphviz, netbox or containerlab
 - Reverse-engineer something about the file format
 
-## Bootstrap — you may have only this file
+## Bootstrap & Installation
 
-Clone, install, and confirm the toolchain works before authoring anything:
+`pkt-core v0.2.0` is published on PyPI: [https://pypi.org/project/pkt-core/](https://pypi.org/project/pkt-core/)
+
+> [!IMPORTANT]
+> **Package vs Import Name:**
+> * Distribution name (for `pip`): **`pkt-core`** (`python -m pip install pkt-core`)
+> * Import module name (in Python): **`pkt_core`** (`from pkt_core import Lab`)
+
+### 1. Integrating as a Dependency
+
+Never assume a particular virtual environment directory exists. Always check for an active virtual environment or create one before installing:
+
+```console
+$ python3 -m venv .venv && source .venv/bin/activate
+$ python -m pip install pkt-core
+```
+
+### 2. Local Repository Development
+
+If working directly in the cloned repository:
 
 ```console
 $ git clone https://github.com/aacanadaa/packet-tracer-pkt-format.git
 $ cd packet-tracer-pkt-format
-$ python3 -m venv .venv && . .venv/bin/activate
-$ pip install -e . pytest hypothesis pydantic
+$ python3 -m venv .venv && source .venv/bin/activate
+$ pip install -e ".[dev]"
 $ python -m pytest tests/               # the bar is 0 failures
 ```
 
@@ -58,34 +76,26 @@ Do **not** pass `-q`: `pyproject.toml` already sets
 and suppresses the summary line entirely — you get dots and no count. The default
 run deselects the slow corpus tests; opt into those with `-m corpus`.
 
-Observed with `pkt_core_native` installed, at this commit:
-
+Observed test run:
 ```
-542 passed, 1 skipped, 35 deselected
+112 passed, 4 skipped, 1 deselected
 ```
-
-The exact totals grow as tests are added — treat **0 failures** as the invariant and
-the skip count as environmental: the Rust-accelerator tests skip when
-`pkt_core_native` is absent, so a large skip count means a missing optional
-accelerator, not a broken checkout.
 
 Optional but faster: `pip install pkt_core_native` gives the Rust cipher
 accelerator (~100x). `libgcrypt` is a further optional accelerator. **Neither is
-required** — the pure-Python path is complete.
+required** — the pure-Python path is complete and bundled.
 
 Sanity check that you are ready to author:
 
 ```python
-from pkt_core import decode_bytes, encode_bytes        # codec works
-import sys; sys.path.insert(0, "tools"); sys.path.insert(0, ".")
-import lab_api                                          # authoring works
-models, modules = lab_api.load_templates("tools/device_templates.json")
-lab = lab_api.Lab("tools/network_seed.xml", models, modules)
-print(lab.device_names())   # 7 seed names - see the PITFALL section
+from pkt_core import Lab, decode, open_lab
+
+# Lab() loads bundled templates and seed automatically; clean canvas
+lab = Lab()
+print("Clean lab initialized, existing devices:", lab.device_names())  # []
 ```
 
-If `decode_bytes` raises `UnsupportedCipherError`, you are missing `libgcrypt`
-and the pure-Python backends; reinstall with `pip install -e .` and check
+If `decode` or low-level codec raises `UnsupportedCipherError`, check
 `python -c "from pkt_core.crypto.ciphers import available_ciphers; print(available_ciphers())"`
 which must include `twofish`.
 
@@ -116,72 +126,83 @@ that contains `>`. Do not use a validating parser.
 Python 3.10+. Optional: `libgcrypt` (faster), Rust accelerator (fastest).
 Nothing is required to author a file.
 
-## The two APIs — pick by task
+## The SDK APIs — Default & Recommended
 
-### 1. `src/pkt_core/` — read, inspect, modify
+Coding agents and developers should use the **`pkt_core` public SDK API** as the primary integration method. Prefer the SDK's documented builder methods, resource loaders (`pkt_core.resources`), codec functions, and CLI over importing internal modules or manually manipulating bundled files.
+
+The scripts in `tools/` (`tools/lab_api.py`, `tools/activity.py`, `tools/scoring.py`) are backward-compatibility shims that delegate to `pkt_core.builder`. Use `tools/` scripts directly only when maintaining legacy scripts that specifically require them.
+
+### 1. Authoring Labs from Scratch (`pkt_core.Lab`)
+
+Use `Lab()` with zero path arguments to initialize a clean workspace with all 137 device templates, 78 module templates, and the base network seed loaded automatically:
 
 ```python
-from pkt_core import decode, decode_bytes, encode_bytes   # container level
-from pkt_core.models import Lab                           # not re-exported by pkt_core
+from pkt_core import Lab
 
+lab = Lab()
+
+# Place a Cisco router with an installed serial module and IOS running configuration
+r1 = lab.add_device(
+    model="2911",  # Accepts "2911", "Router_2901", "2960-24TT", "Switch_2960", etc.
+    name="R1",
+    x=200,
+    y=250,
+    install="HWIC-2T",
+    ios_config=[
+        "hostname R1",
+        "interface GigabitEthernet0/0",
+        " ip address 192.168.1.1 255.255.255.0",
+        " no shutdown",
+        "end",
+    ],
+)
+
+sw1 = lab.add_device("2960-24TT", "SW1", x=400, y=250)
+pc1 = lab.add_device(
+    model="PC-PT",
+    name="PC1",
+    x=600,
+    y=250,
+    pc_ip=("192.168.1.10", "255.255.255.0", "192.168.1.1"),
+)
+
+# Connect interfaces using connect() (or link())
+lab.connect(r1, "GigabitEthernet0/0", sw1, "GigabitEthernet0/1")
+lab.connect(sw1, "FastEthernet0/1", pc1, "FastEthernet0")
+
+# Export complete .pkt container (sealed with Twofish-EAX AEAD)
+lab.export("my_lab.pkt")
+```
+
+### 2. Reading, Inspecting, and Modifying Existing Labs
+
+Use `open_lab()` for typed Pydantic inspection models, or `decode()` for byte-exact container inspection:
+
+```python
+from pkt_core import open_lab, decode, encode_bytes
+
+# 1. High-level inspection view
+lab = open_lab("lab.pkt")
+print(f"Version: {lab.version}")
+for dev in lab.devices:
+    print(dev.name, dev.model, dev.position)
+for link in lab.links:
+    print(link.cable_type, link.port_names)
+
+# 2. Container-level byte manipulation
 container = decode("lab.pkt")                   # verifier-based format detection
 container.root_tag, container.is_activity       # 'PACKETTRACER5', False
-lab = Lab.from_bytes(container.xml)
-
-lab.version                                     # '9.0.1.0858'
-lab.devices, lab.links, lab.clusters, lab.options
-lab.activity_password                          # <ACTIVITY PASS="..."> attribute!
-lab.activity_sections                          # COMPARISONS/INITIALSETUP/LOCKINGTREE/INSTRUCTIONS
-
-for d in lab.devices:
-    d.name, d.kind, d.model, d.position, d.cluster_id
-    d.ports                                     # flattened across modules/slots
-    d.details                                   # sys contact/location, serial, coords
-    d.port_configs                              # IP/DHCP/DNS/VLAN
-    d.wireless, d.files
-
-lab.set_activity_password("newpass")
-lab.devices[0].set_name("CORE-R1")             # writes to ENGINE/NAME, correctly
-lab.devices[0].set_position(123, 456)
-
-out = encode_bytes(lab.to_xml(), container.format_name)   # byte-exact if unmodified
+out_bytes = encode_bytes(container.xml, container.format_name)   # byte-exact if unmodified
 ```
 
-`root_tag` / `is_activity` live on the **container**; `version` lives on the **lab**.
-`Lab` is not exported from the `pkt_core` package root — import it from `pkt_core.models`.
+### 3. Other Documented Public SDK Exports
 
-CLI: `pkt info | unpack | pack | diff | export | audit`.
-`pkt unpack` emits XML + container metadata + per-device IOS configs + a topology graph.
-`pkt audit lab.pkt --templates tools/device_templates.json` prints raw **and**
-distinct counts for every service family and exits non-zero on any duplicate —
-see the "if the validator prints a count" rule below. Run it on anything you
-generate from harvested templates.
-
-Models are **views over a lossless tree**: untouched bytes are emitted verbatim,
-so data loss is impossible. Unrecognised elements surface in `extra_fields`.
-
-### 2. `tools/lab_api.py` — author from scratch
-
-```python
-import sys; sys.path.insert(0, "tools"); sys.path.insert(0, ".")
-import lab_api
-
-models, modules = lab_api.load_templates("tools/device_templates.json")
-lab = lab_api.Lab("tools/network_seed.xml", models, modules)
-
-lab.prune_seed_devices()        # <-- DO THIS unless you want the seed devices
-r  = lab.add_device("2911", "R1", 250, 350, install="HWIC-2T",
-                    ios_config=["hostname R1",
-                                "interface GigabitEthernet0/0",
-                                " ip address 192.168.1.1 255.255.255.0",
-                                " no shutdown", "end"])
-sw = lab.add_device("2960-24TT", "SW1", 450, 350)
-pc = lab.add_device("PC-PT", "PC1", 650, 350,
-                    pc_ip=("192.168.1.10", "255.255.255.0", "192.168.1.1"))
-lab.link(r, "GigabitEthernet0/0", sw, "GigabitEthernet0/1")
-lab.link(sw, "FastEthernet0/1", pc, "FastEthernet0")
-lab.save("lab.pkt")
-```
+* `Activity` / `ActivityBuilder` (`from pkt_core import Activity`): Programmatically construct scored `.pka` activities with instructions, timer, password, and grading.
+* `Layout` (`from pkt_core import Layout`): Collision-free layout packing engine with semantic tier bands.
+* `diff_labs(lab_a, lab_b)`: Compare two labs semantically.
+* `export(lab, format)`: Export topology to `graphviz`, `containerlab`, or `netbox`.
+* `pkt_core.resources`: Bundled resource accessors (`load_bundled_templates`, `load_bundled_seed_xml`, `load_bundled_device_shapes`, `load_bundled_activity_skeleton`).
+* CLI: `pkt info`, `pkt audit`, `pkt unpack`, `pkt pack`, `pkt diff`, `pkt export`.
 
 **Two ways to name a bay, and they are not the same thing.** `install=` / the default
 `bay=0` means *the next empty bay* — the right choice when you are filling bays in order,
@@ -191,7 +212,7 @@ which is why the example above needs no bay number. `install_module(..., slot=N)
 to index the list of *currently empty* bays, which renumbers as they fill, so `bay=1`
 silently skipped a bay after `bay=0` was used (problem 7). One module fills one bay.
 
-**A cable is not a configuration.** `lab.link()` draws the cable and sets the port's
+**A cable is not a configuration.** `lab.link()` or `lab.connect()` draws the cable and sets the port's
 electrical properties; it does not give an interface an address. If your config emitter is
 driven by a registry of routed interfaces, then a bearer that was never registered gets no
 `interface` block, no `ip address`, no `no shutdown` — and the cable renders **dead** while
@@ -233,23 +254,15 @@ Without timing from exactly one end the line stays down and the cable draws red 
 false-alarm section below — red alone is not proof of a fault, but red *with no address*
 is).
 
-## PITFALL — device names collide with the seed
+## Seed devices and name collisions
 
-`network_seed.xml` ships **7 pre-existing devices**:
+`network_seed.xml` ships 7 pre-existing donor devices (`Server`, `Power Distribution Device0`, `PC-B`, `PC-A`, `SW1`, `R2`, `R1`).
 
-```
-Server   Power Distribution Device0   PC-B   PC-A   SW1   R2   R1
-```
+When calling `Lab()` without custom seed arguments (the default SDK usage), **`auto_prune_seed=True` is enabled automatically**, which removes these donor devices immediately so you start with a clean canvas. Names like `R1` or `SW1` will not collide.
 
-`add_device("2960-24TT", "SW1", …)` **raises ValueError** by default. This is
-deliberate — silently renaming hides authoring bugs. Either:
-
-- `lab.prune_seed_devices()` first (returns the removed names, idempotent), or
-- pick names outside that set, or
-- `on_name_conflict="suffix"` to opt into `SW1` → `SW1(1)`.
-
-`lab.device_names()` lists what is taken. Note: device `<NAME>` lives under
-`<ENGINE>`, not as a direct child of `<DEVICE>`.
+If you provide an explicit seed path or bytes (`Lab(seed="my_seed.xml")`), seed devices are preserved by default. To avoid name conflicts:
+- Call `lab.prune_seed_devices()` first (returns removed device names, idempotent), or
+- Pass `on_name_conflict="suffix"` to `add_device()` to auto-rename conflicts (`SW1` → `SW1(1)`).
 
 ## Authoring at scale — eight rules, learned by shipping broken labs
 
