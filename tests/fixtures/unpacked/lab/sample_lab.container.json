@@ -1,0 +1,11 @@
+{
+  "source_file": "sample_lab.pkt",
+  "source_size": 81474,
+  "format": "pkt",
+  "cipher": "twofish",
+  "key_byte": "0x89",
+  "iv_byte": "0x10",
+  "root_tag": "PACKETTRACER5",
+  "is_activity": false,
+  "xml_bytes": 1045755
+}

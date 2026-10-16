@@ -1,0 +1,17 @@
+digraph "topology" {
+  graph [rankdir=LR, splines=true];
+  node  [shape=box, style=rounded, fontname="Helvetica"];
+  edge  [fontname="Helvetica", fontsize=10];
+  d0 [label="Server\\nServer Server-PT"];
+  d1 [label="Power Distribution Device0\\nPower Distribution Device Power Distribution Device"];
+  d2 [label="PC-B\\nPc PC-PT"];
+  d3 [label="PC-A\\nPc PC-PT"];
+  d4 [label="SW1\\nSwitch 2960-24TT"];
+  d5 [label="R2\\nRouter 2911"];
+  d6 [label="R1\\nRouter 2911"];
+  d5 -> d0 [dir=none, style=solid, label="GigabitEthernet0/2 — FastEthernet0"];
+  d5 -> d2 [dir=none, style=solid, label="GigabitEthernet0/1 — FastEthernet0"];
+  d6 -> d5 [dir=none, style=solid, label="GigabitEthernet0/1 — GigabitEthernet0/0"];
+  d4 -> d6 [dir=none, style=solid, label="FastEthernet0/1 — GigabitEthernet0/0"];
+  d4 -> d3 [dir=none, style=solid, label="FastEthernet0/2 — FastEthernet0"];
+}

@@ -1,0 +1,5 @@
+digraph "topology" {
+  graph [rankdir=LR, splines=true];
+  node  [shape=box, style=rounded, fontname="Helvetica"];
+  edge  [fontname="Helvetica", fontsize=10];
+}

@@ -1,0 +1,11 @@
+{
+  "source_file": "sample_activity.pka",
+  "source_size": 34226,
+  "format": "pkt",
+  "cipher": "twofish",
+  "key_byte": "0x89",
+  "iv_byte": "0x10",
+  "root_tag": "PACKETTRACER5_ACTIVITY",
+  "is_activity": true,
+  "xml_bytes": 321434
+}

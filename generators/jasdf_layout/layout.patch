@@ -1,0 +1,38 @@
+--- a/generators/jasdf_aewc/build_jasdf_aewc.py
++++ b/generators/jasdf_aewc/build_jasdf_aewc.py
+@@ -142,6 +142,10 @@
+         self.lab = lab_api.Lab(str(TOOLKIT / "tools" / "network_seed.xml"),
+                                self.models, self.modules)
+         self.seed_removed = self.lab.prune_seed_devices()
++        # Placement is owned by lab_api.Layout (label-inclusive boxes, greedy
++        # row-major packing per semantic tier, 80-unit centre floor, canvas
++        # wrap).  Kept alongside the lab so every add() goes through it.
++        self.layout = lab_api.Layout()
+         self.sid, self.meta = {}, {}
+         self.has_nic_ip = set()
+         self.routed = []                 # (dev, port, ip, mask)
+@@ -153,9 +157,21 @@
+         self.serial_meta = []
+ 
+     # -- primitives ------------------------------------------------------ #
+-    def add(self, key, model, name, x, y, *, role="", site="", ip=None,
+-            cfg=None, pc_ip=None, modules=None, dns=True):
+-        sid = self.lab.add_device(model, name, x, y, ios_config=cfg, pc_ip=pc_ip)
++    def add(self, key, model, name, x=None, y=None, *, group=None, role="",
++            site="", ip=None, cfg=None, pc_ip=None, modules=None, dns=True):
++        """Add a device.  Placement is owned by lab_api.Layout.
++
++        x/y are legacy band-anchor *hints* from the old hand-typed grids (the
++        310-unit airframe pitch, 175x130 server grid, 400-unit CRC columns,
++        ...): they no longer position anything literally.  Passing them is
++        harmless and keeps old call sites compiling; omitting them is equally
++        fine.  Devices are packed row-major inside their semantic tier band
++        (see lab_api.tier_for_name) with label-inclusive boxes and the 80-unit
++        centre floor, so no two devices -- or their captions -- can collide."""
++        grp = group or lab_api.tier_for_name(name)
++        p = self.layout.place(name, model, group=grp)
++        sid = self.lab.add_device(model, name, p.x, p.y,
++                                  ios_config=cfg, pc_ip=pc_ip)
+         # always fill the *first* empty bay: install_module indexes the
+         # currently-empty slots, so bay=N would skip slots as they fill up.
+         for mod in (modules or []):

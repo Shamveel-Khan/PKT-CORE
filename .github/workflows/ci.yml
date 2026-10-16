@@ -1,0 +1,96 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # The contract: tests pass, types are strict, coverage holds at 90%.
+  test:
+    name: test (py${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 3.10 is the documented floor; 3.14 is what we develop against.
+        python: ["3.10", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e . pytest pytest-cov hypothesis pydantic mypy
+
+      - name: Types (mypy --strict)
+        run: python -m mypy --strict src/pkt_core
+
+      - name: Tests + coverage gate
+        run: >
+          python -m pytest tests/
+          -p no:cacheprovider
+          --cov=pkt_core
+          --cov-report=term-missing
+
+      # The pure-Python path must stand on its own: if the optional Rust
+      # module were somehow present on the runner, mask it and re-run.
+      - name: Tests with the Rust accelerator masked
+        env:
+          PKT_CORE_DISABLE_RUST: "1"
+        run: python -m pytest tests/ -p no:cacheprovider
+
+  # The accelerator is optional, but when it is present it must agree with the
+  # pure-Python reference bit-for-bit and pass the published KATs.
+  rust:
+    name: rust accelerator
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - name: Native KATs
+        working-directory: native/pkt_core_native
+        run: |
+          cargo test --no-default-features
+
+      - name: Install pkt_core and the extension
+        run: |
+          python -m pip install --upgrade pip
+          pip install maturin pytest pytest-cov hypothesis pydantic mypy
+          python -m pip install -e .
+          # the crate's pyproject declares build-backend = "maturin", so pip
+          # builds and installs it into this interpreter directly
+          pip install --no-build-isolation ./native/pkt_core_native
+
+      # Fail here, legibly, rather than inside a test with a confusing message.
+      - name: Sanity - the extension imports and the backend registers
+        run: |
+          python -c "import pkt_core_native as n; print('pkt_core_native', n.__version__)"
+          python -c "from pkt_core.crypto.ciphers import available_backends, rust_available; print('backends', available_backends()); assert rust_available(), 'Rust backend did not register'"
+
+      - name: Cross-backend equivalence (Rust == pure Python)
+        # No PKT_CORE_BACKEND here: the tests pin backends where they need
+        # them, and forcing it globally would break the optionality check.
+        run: python -m pytest tests/test_rust_backend.py tests/test_ciphers.py -p no:cacheprovider
+
+      - name: Full suite with the accelerator
+        run: python -m pytest tests/ -p no:cacheprovider

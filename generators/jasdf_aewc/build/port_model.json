@@ -1,0 +1,5483 @@
+{
+ "1841": {
+  "FastEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1": [
+   "sample-link",
+   "template"
+  ],
+  "Serial0/0/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/1": [
+   "corpus-link",
+   "module"
+  ]
+ },
+ "1941": {
+  "0": [
+   "corpus-link",
+   "template"
+  ],
+  "Console": [
+   "corpus-link"
+  ],
+  "Ethernet6/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/0": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "sample-link",
+   "template"
+  ],
+  "RS 232": [
+   "corpus-link",
+   "template"
+  ],
+  "Serial0/0/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/3": [
+   "corpus-link",
+   "module"
+  ]
+ },
+ "2620XM": {
+  "FastEthernet0/0": [
+   "sample-ios",
+   "template"
+  ]
+ },
+ "2621XM": {
+  "FastEthernet0/0": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-ios",
+   "template"
+  ]
+ },
+ "2811": {
+  "Ethernet6": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "Internet": [
+   "sample-link"
+  ],
+  "RS 232": [
+   "corpus-link",
+   "template"
+  ],
+  "Serial0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/7": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/7": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/7": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/7": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1/7": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial7": [
+   "corpus-link",
+   "module"
+  ]
+ },
+ "2901": {
+  "GigabitEthernet0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "Serial0/0/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/7": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/7": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/7": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/7": [
+   "corpus-link",
+   "module"
+  ]
+ },
+ "2911": {
+  "Console": [
+   "corpus-link"
+  ],
+  "Ethernet 1": [
+   "corpus-link",
+   "template"
+  ],
+  "Ethernet0/0": [
+   "corpus-link",
+   "template"
+  ],
+  "Ethernet0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/0": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/2": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/2": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/2": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/3": [
+   "corpus-link",
+   "template"
+  ],
+  "RS 232": [
+   "corpus-link",
+   "template"
+  ],
+  "Serial0/0/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/7": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/7": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/7": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/4": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/5": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/6": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/7": [
+   "corpus-link",
+   "module"
+  ]
+ },
+ "2950-24": {
+  "Ethernet0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/10": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/11": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/12": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/13": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/14": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/15": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/16": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/17": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/18": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/19": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/2": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/20": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/21": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/22": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/23": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/3": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/4": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/5": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/6": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/7": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/8": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/9": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet10": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet11": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet12": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet13": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet14": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet15": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet16": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet17": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet18": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet19": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet20": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet21": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet22": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet23": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet3": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet4": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet5": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet6": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet7": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet8": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet9": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ]
+ },
+ "2950T-24": {
+  "FastEthernet0": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/10": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/11": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/12": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/13": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/14": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/15": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/16": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/17": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/18": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/19": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/2": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/20": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/21": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/22": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/23": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/24": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/3": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/4": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/5": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/6": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/7": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/8": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/9": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet10": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet11": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet12": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet13": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet14": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet15": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet16": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet17": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet18": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet19": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet2": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet20": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet21": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet22": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet23": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet3": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet4": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet5": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet6": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet7": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet8": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet9": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/1": [
+   "corpus-ios",
+   "template"
+  ],
+  "GigabitEthernet0/2": [
+   "corpus-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/2": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ]
+ },
+ "2960-24TT": {
+  "Console": [
+   "corpus-link"
+  ],
+  "Ethernet1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/10": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/11": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/12": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/13": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/14": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/15": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/16": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/17": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/18": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/19": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/2": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/20": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/21": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/22": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/23": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/3": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/4": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/5": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/6": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/7": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/8": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/9": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/0": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/10": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/11": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/12": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/13": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/14": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/15": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/16": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/17": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/18": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/19": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/2": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/20": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/21": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/22": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/23": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/3": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/4": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/5": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/6": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/7": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/8": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/9": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet10": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet11": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet12": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet13": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet14": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet15": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet16": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet17": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet18": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet19": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet20": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet21": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet22": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet23": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet3": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet4": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet5": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet6": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet7": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet8": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet9": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/2": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet2/0": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet2/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet3/0": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet3/1": [
+   "corpus-link",
+   "template"
+  ],
+  "Port 0": [
+   "corpus-link",
+   "template"
+  ],
+  "RS 232": [
+   "corpus-link",
+   "template"
+  ],
+  "Switch": [
+   "corpus-link"
+  ]
+ },
+ "3560-24PS": {
+  "FastEthernet0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/10": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/11": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/12": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/13": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/14": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/15": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/16": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/17": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/18": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/19": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/2": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/20": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/21": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/22": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/23": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/3": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/4": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/5": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/6": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/7": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/8": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/9": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/0": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/10": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/11": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/12": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/13": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/14": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/15": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/16": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/17": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/18": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/19": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/2": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/20": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/21": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/22": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/23": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/3": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/4": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/5": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/6": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/7": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/8": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/9": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet10": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet11": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet12": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet13": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet14": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet15": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet16": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet17": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet18": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet19": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet20": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet21": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet22": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet23": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet3": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet4": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet5": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet6": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet7": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet8": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet9": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/2": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "3650-24PS": {
+  "GigabitEthernet0": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/0": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/10": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/11": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/12": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/13": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/14": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/15": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/16": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/17": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/18": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/19": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/2": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/20": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/21": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/22": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/23": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/24": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/25": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/26": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/27": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/3": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/4": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/5": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/6": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/7": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/8": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/9": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/10": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/11": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/12": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/13": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/14": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/15": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/16": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/17": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/18": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/19": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/2": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/20": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/21": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/22": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/23": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/24": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/25": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/26": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/27": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/28": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/3": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/4": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/5": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/6": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/7": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/8": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/0/9": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/1": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/10": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/11": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/12": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/13": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/14": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/15": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/16": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/17": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/18": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/19": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/2": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/20": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/21": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/22": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/23": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/24": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/25": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/26": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/27": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/28": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/3": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/4": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/5": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/6": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/7": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/8": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1/1/9": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet10": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet11": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet12": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet13": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet14": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet15": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet16": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet17": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet18": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet19": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet2": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet20": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet21": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet22": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet23": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet24": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet25": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet26": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet27": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet3": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet4": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet5": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet6": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet7": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet8": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet9": [
+   "corpus-link",
+   "template"
+  ],
+  "Port 0": [
+   "corpus-link",
+   "template"
+  ],
+  "RS 232": [
+   "corpus-link",
+   "template"
+  ]
+ },
+ "5505": {
+  "Ethernet0/0": [
+   "corpus-link",
+   "template"
+  ],
+  "Ethernet0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "Ethernet0/2": [
+   "corpus-link",
+   "template"
+  ],
+  "Ethernet0/3": [
+   "corpus-link",
+   "template"
+  ],
+  "Ethernet0/4": [
+   "corpus-link",
+   "template"
+  ],
+  "Ethernet0/5": [
+   "corpus-link",
+   "template"
+  ],
+  "Ethernet0/6": [
+   "corpus-link",
+   "template"
+  ],
+  "Ethernet0/7": [
+   "corpus-link",
+   "template"
+  ]
+ },
+ "7960": {
+  "FastEthernet0": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet0/2": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1": [
+   "corpus-link",
+   "template"
+  ],
+  "PC": [
+   "corpus-link"
+  ],
+  "Switch": [
+   "corpus-link"
+  ]
+ },
+ "819HG-4G-IOX": {
+  "FastEthernet0": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/2": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/3": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/4": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet2": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet3": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0": [
+   "sample-ios",
+   "template"
+  ]
+ },
+ "819HGW": {
+  "FastEthernet0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet2": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet3": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "Serial0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1": [
+   "corpus-link",
+   "module"
+  ]
+ },
+ "829": {
+  "GigabitEthernet0": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet2": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet3": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet4": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet5": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet6": [
+   "sample-ios",
+   "template"
+  ]
+ },
+ "AccessPoint-PT": {
+  "FastEthernet0": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet0/0": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet7/1": [
+   "corpus-link",
+   "template"
+  ],
+  "Port 0": [
+   "corpus-link",
+   "template"
+  ]
+ },
+ "AccessPoint-PT-N": {
+  "FastEthernet0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "Port 0": [
+   "corpus-link",
+   "template"
+  ]
+ },
+ "Air Conditioner": {
+  "D2": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Air Cooler": {
+  "D2": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Appliance(0)": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Atm Pressure Monitor(0)": {
+  "FastEthernet2/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Battery": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "D1": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "CGR1240": {
+  "FastEthernet2/1": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet2/2": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet2/3": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet2/4": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/1": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/2": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/3": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet2/1": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet2/2": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet2/3": [
+   "sample-ios",
+   "template"
+  ]
+ },
+ "CO Detector": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "CO2 Detector": {
+  "FastEthernet0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Carbon Dioxide Detector": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Carbon Monoxide Detector": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Cell-Tower": {
+  "Coaxial0/0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Central-Office-Server": {
+  "Coaxial0/0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Cloud-PT": {
+  "Coaxial1": [
+   "corpus-link",
+   "template"
+  ],
+  "Ethernet1": [
+   "sample-link",
+   "template"
+  ],
+  "Port 0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "Serial0/0/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/0/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial1/1": [
+   "corpus-link",
+   "module"
+  ]
+ },
+ "CyberObserver": {
+  "GigabitEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "DLC100": {
+  "Ethernet 1": [
+   "sample-link",
+   "template"
+  ],
+  "Ethernet 2": [
+   "sample-link",
+   "template"
+  ],
+  "Ethernet 3": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/2": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/3": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/4": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/5": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "DSL-Modem-PT": {
+  "FastEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "Port 0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "DataHistorianServer": {
+  "GigabitEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Door": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "Ethernet 1": [
+   "sample-link",
+   "template"
+  ],
+  "Ethernet 2": [
+   "sample-link",
+   "template"
+  ],
+  "Ethernet 3": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Fan": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Fire Monitor": {
+  "D0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Fire Sprinkler": {
+  "D1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Furnace": {
+  "D1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Garage Door": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "HMI-PT": {
+  "GigabitEthernet0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Heating Element": {
+  "D1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Home Speaker": {
+  "A0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "HomeRouter-PT-AC": {
+  "GigabitEthernet 1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 2": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 3": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 4": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 5": [
+   "sample-link",
+   "template"
+  ],
+  "Internet": [
+   "sample-link"
+  ]
+ },
+ "Hub-PT": {
+  "Ethernet0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet3": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet4": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet5": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Humidifier": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Humidity Monitor": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Humiture Monitor": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Humiture Sensor": {
+  "A0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "IE-2000": {
+  "FastEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/2": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/3": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/4": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/1": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/2": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/3": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/4": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet3": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/1": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/2": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ]
+ },
+ "IE-3400": {
+  "GigabitEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/1": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/10": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/2": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/3": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/4": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/5": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/6": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/7": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/8": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/9": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet2": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet3": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet4": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet5": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet6": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet7": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet8": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet9": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "IE-9320": {
+  "GigabitEthernet0/0/0": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/10": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/11": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/12": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/13": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/14": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/15": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/16": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/17": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/18": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/19": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/2": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/20": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/21": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/22": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/23": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/24": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/25": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/26": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/27": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/3": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/4": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/5": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/6": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/7": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/8": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/9": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/0": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/10": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/11": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/12": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/13": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/14": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/15": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/16": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/17": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/18": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/19": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/2": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/20": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/21": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/22": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/23": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/24": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/25": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/26": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/27": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/3": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/4": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/5": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/6": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/7": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/8": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/9": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/1": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/10": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/11": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/12": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/13": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/14": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/15": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/16": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/17": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/18": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/19": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/2": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/20": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/21": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/22": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/23": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/24": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/25": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/26": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/27": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/28": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/3": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/4": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/5": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/6": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/7": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/8": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/9": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ]
+ },
+ "IE-9320-26S2C": {
+  "GigabitEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/10": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/11": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/12": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/13": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/14": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/15": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/16": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/17": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/18": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/19": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/2": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/20": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/21": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/22": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/23": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/24": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/25": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/26": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/27": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/28": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/3": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/4": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/5": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/6": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/7": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/8": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/9": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/1": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/10": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/11": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/12": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/13": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/14": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/15": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/16": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/17": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/18": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/19": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/2": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/20": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/21": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/22": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/23": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/24": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/25": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/26": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/27": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/28": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/3": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/4": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/5": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/6": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/7": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/8": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/9": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet10": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet11": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet12": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet13": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet14": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet15": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet16": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet17": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet18": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet19": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet2": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet20": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet21": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet22": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet23": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet24": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet25": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet26": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet27": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet3": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet4": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet5": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet6": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet7": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet8": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet9": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "IR1101": {
+  "FastEthernet0/0/1": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/0/2": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/0/3": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/0/4": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/0": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ]
+ },
+ "IR8340": {
+  "GigabitEthernet0/0/0": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/1": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/10": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/11": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/12": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/13": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/2": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/3": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/4": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/5": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/6": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/7": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/8": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/9": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/1/0": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/1": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/10": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/11": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/12": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/13": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/2": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/3": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/4": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/5": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/6": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/7": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/8": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1/9": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/10": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/11": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/12": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/13": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/14": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/2": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/3": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/4": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/5": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/6": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/7": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/8": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/9": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "ISA-3000": {
+  "GigabitEthernet1/1": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/2": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/3": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/4": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ]
+ },
+ "ISR4321": {
+  "GigabitEthernet0/0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/2": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1/1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/2": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "ISR4331": {
+  "GigabitEthernet0/0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/0/2": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/2": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/3": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/2": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/3": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "Serial0/1/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/1/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/2/3": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/2": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial0/3/3": [
+   "corpus-link",
+   "module"
+  ]
+ },
+ "LAP-PT": {},
+ "LCD": {
+  "A1": [
+   "sample-link",
+   "template"
+  ],
+  "D0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "LED": {
+  "A0": [
+   "sample-link",
+   "template"
+  ],
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "D1": [
+   "sample-link",
+   "template"
+  ],
+  "D2": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Laptop-PT": {
+  "FastEthernet0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet1/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet2/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet3/1": [
+   "corpus-link",
+   "template"
+  ],
+  "PC": [
+   "corpus-link"
+  ],
+  "RS 232": [
+   "corpus-link",
+   "template"
+  ]
+ },
+ "Lawn Sprinkler": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Light(0)": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Linksys-WRT300N": {
+  "FastEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/2": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/3": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/4": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/5": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet3": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet4": [
+   "sample-link",
+   "template"
+  ],
+  "Internet": [
+   "sample-link"
+  ]
+ },
+ "MCU-PT": {
+  "A0": [
+   "sample-link",
+   "template"
+  ],
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "D1": [
+   "sample-link",
+   "template"
+  ],
+  "USB0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Meraki-MX65W": {
+  "GigabitEthernet 1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 10": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 2": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 3": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 4": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 5": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 6": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 7": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 8": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet 9": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/10": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/2": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/3": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/4": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/5": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/6": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/7": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/8": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/9": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet2": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet3": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet4": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet5": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet6": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet7": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet8": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet9": [
+   "corpus-link",
+   "template"
+  ],
+  "Internet 1": [
+   "corpus-link",
+   "template"
+  ]
+ },
+ "Meraki-Server": {
+  "FastEthernet0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "NetworkController": {
+  "GigabitEthernet0/1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0/2": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "PC-PT": {
+  "Console": [
+   "corpus-link"
+  ],
+  "Ethernet 1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "Ethernet 2": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet3/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet4/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet5/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet6/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet8/1": [
+   "corpus-link",
+   "template"
+  ],
+  "PC": [
+   "corpus-link"
+  ],
+  "Port 1": [
+   "corpus-link",
+   "template"
+  ],
+  "RS 232": [
+   "corpus-link",
+   "template"
+  ]
+ },
+ "PLC-PT": {
+  "A1": [
+   "sample-link",
+   "template"
+  ],
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "D1": [
+   "sample-link",
+   "template"
+  ],
+  "D2": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "PT8200": {
+  "GigabitEthernet0/0/0": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/1": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/2": [
+   "sample-ios",
+   "template"
+  ],
+  "GigabitEthernet0/0/3": [
+   "sample-ios",
+   "template"
+  ]
+ },
+ "Potentiometer": {
+  "A0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Power Meter": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "D1": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Push Button": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "D1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "RGB LED": {
+  "A0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Rocker Switch": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "D1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Rocker Switch(0)": {
+  "D1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Router-PT": {
+  "Ethernet6/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/0.1": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/0.2": [
+   "corpus-ios",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet1": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet2/2": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet3/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet3/2": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet4/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet4/0.1": [
+   "corpus-ios",
+   "template"
+  ],
+  "FastEthernet4/0.2": [
+   "corpus-ios",
+   "template"
+  ],
+  "FastEthernet4/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet5/0": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet5/1": [
+   "corpus-ios",
+   "corpus-link",
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet6/0": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet6/1": [
+   "corpus-link",
+   "template"
+  ],
+  "Internet": [
+   "sample-link"
+  ],
+  "Serial2/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial2/1": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial3/0": [
+   "corpus-link",
+   "module"
+  ],
+  "Serial3/1": [
+   "corpus-link",
+   "module"
+  ]
+ },
+ "SBC-PT": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "D1": [
+   "sample-link",
+   "template"
+  ],
+  "Ethernet0": [
+   "sample-link",
+   "template"
+  ],
+  "USB0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Server-PT": {
+  "FastEthernet0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/0": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet3/1": [
+   "corpus-link",
+   "template"
+  ],
+  "FastEthernet6/0": [
+   "corpus-link",
+   "template"
+  ]
+ },
+ "Siren": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Smart LED": {
+  "A0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Sniffer": {
+  "Ethernet1": [
+   "corpus-link",
+   "template"
+  ],
+  "Ethernet2": [
+   "corpus-link",
+   "template"
+  ]
+ },
+ "Solar Panel": {
+  "D0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Sound Sensor": {
+  "A0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Switch-PT": {
+  "FastEthernet0/1": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/2": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/3": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/4": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/1": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/2": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/3": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet1/4": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2/1": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2/2": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2/3": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet2/4": [
+   "sample-ios",
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet3/1": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet3/2": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet3/3": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet3/4": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet4/1": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet4/2": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet4/3": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet4/4": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet5/1": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet5/2": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet5/3": [
+   "sample-ios",
+   "template"
+  ],
+  "FastEthernet5/4": [
+   "sample-ios",
+   "template"
+  ]
+ },
+ "Temperature Monitor": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Thermostat": {
+  "D1": [
+   "sample-link",
+   "template"
+  ],
+  "D2": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Thing": {
+  "A0": [
+   "sample-link",
+   "template"
+  ],
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "Ethernet0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Toggle Push Button": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "D1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Trip Sensor": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Trip Wire": {
+  "D0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "WLC-2504": {
+  "GigabitEthernet0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/2": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/3": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/4": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/2": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/3": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1/0/4": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet2": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet3": [
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet4": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "WLC-3504": {
+  "GigabitEthernet0/1": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/2": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/3": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/4": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet0/5": [
+   "corpus-link",
+   "template"
+  ],
+  "GigabitEthernet1": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet2": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet3": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet4": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ],
+  "GigabitEthernet5": [
+   "corpus-link",
+   "sample-link",
+   "template"
+  ]
+ },
+ "WLC-PT": {
+  "GigabitEthernet0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Water Level Monitor": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Water Sensor": {
+  "A0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Wind Detector": {
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Wind Sensor": {
+  "D0": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Wind Turbine": {
+  "D0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ },
+ "Window": {
+  "FastEthernet0": [
+   "sample-link",
+   "template"
+  ],
+  "FastEthernet0/1": [
+   "sample-link",
+   "template"
+  ]
+ }
+}

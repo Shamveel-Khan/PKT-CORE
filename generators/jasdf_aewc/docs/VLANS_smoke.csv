@@ -1,0 +1,11 @@
+vlan,name,purpose
+1,NATIVE/RADAR,IR1101 radar-site LAN + 3650/2960 default
+10,OPS-TRACK,air-surveillance / weapons-control operator VLAN
+20,MISSION-SYS,"mission systems (radar processors, track servers)"
+30,VOICE,voice / intercom
+40,MGMT,in-band management and loopbacks
+50,WIFI,wireless (base and airborne tablets)
+60,SERVERS,server farm (JADGE data centre)
+70,TDL-DATALINK,tactical datalink / SATCOM transport
+80,RADAR-SENSOR,radar sensor VLAN
+99,BLACKHOLE,blackhole / unused

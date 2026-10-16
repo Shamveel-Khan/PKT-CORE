@@ -1,0 +1,38 @@
+[
+  {
+    "name": "IRUMA-VLAN10",
+    "network": "10.11.10.0",
+    "new": "JADGE-DC-VLAN10",
+    "why": "Site 11 is the JADGE data centre at Iruma AB; its device names already use the JADGE-DC- prefix."
+  },
+  {
+    "name": "IRUMA-VLAN20",
+    "network": "10.11.20.0",
+    "new": "JADGE-DC-VLAN20",
+    "why": "Same site 11 collision."
+  },
+  {
+    "name": "IRUMA-VLAN50",
+    "network": "10.11.50.0",
+    "new": "JADGE-DC-VLAN50",
+    "why": "Same site 11 collision."
+  },
+  {
+    "name": "IRUMA-VLAN10",
+    "network": "10.29.10.0",
+    "new": "AB-IRUMA-VLAN10",
+    "why": "Site 29 is air base AB-IRUMA; its device names already use the AB-IRUMA- prefix."
+  },
+  {
+    "name": "IRUMA-VLAN20",
+    "network": "10.29.20.0",
+    "new": "AB-IRUMA-VLAN20",
+    "why": "Same site 29 collision."
+  },
+  {
+    "name": "IRUMA-VLAN50",
+    "network": "10.29.50.0",
+    "new": "AB-IRUMA-VLAN50",
+    "why": "Same site 29 collision."
+  }
+]

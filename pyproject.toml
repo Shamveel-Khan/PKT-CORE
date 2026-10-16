@@ -1,0 +1,85 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pkt-core"
+version = "0.2.0"
+description = "Type-safe Python SDK and reverse-engineering codec for Cisco Packet Tracer .pkt and .pka files"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+authors = [{ name = "aacanadaa" }]
+keywords = ["packet-tracer", "pkt", "pka", "cisco", "file-format", "twofish", "eax", "reverse-engineering", "networking", "ccna"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: System Administrators",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: System :: Networking",
+  "Typing :: Typed",
+]
+dependencies = [
+  "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+  "pytest-cov>=4.1",
+  "mypy>=1.8",
+  "hypothesis>=6.90",
+  "build>=1.0.0",
+  "twine>=4.0.0",
+]
+
+[project.scripts]
+pkt = "pkt_core.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"pkt_core" = ["py.typed"]
+"pkt_core.data" = [
+  "device_templates.json",
+  "network_seed.xml",
+  "device_shapes.json",
+  "activity_skeleton.xml",
+]
+
+[tool.mypy]
+strict = true
+python_version = "3.10"
+warn_unreachable = true
+# typings/ carries the stub for the optional Rust accelerator module
+# pkt_core_native, so mypy --strict stays clean whether or not the extension
+# is installed in the environment running the check.
+mypy_path = "typings"
+
+[tool.coverage.run]
+branch = true
+source = ["pkt_core"]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+exclude_lines = [
+  "pragma: no cover",
+  "if TYPE_CHECKING:",
+  "raise NotImplementedError",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers -m 'not corpus'"
+markers = [
+  "corpus: whole-corpus acceptance tests (slow; opt in with -m corpus)",
+]

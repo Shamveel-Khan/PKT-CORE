@@ -1,0 +1,291 @@
+name,model,role,site,mgmt_ip
+JADGE-BB-SW-01,3650-24PS,"JADGE backbone L3 core switch A (OSPF area 0, iBGP edge)",,10.255.0.11
+JADGE-BB-SW-02,3650-24PS,"JADGE backbone L3 core switch B (OSPF area 0, iBGP edge)",,10.255.0.12
+CORE-RTR-01,ISR4331,JADGE core router / OSPF ABR / iBGP speaker,,10.255.0.1
+CORE-RTR-02,ISR4331,JADGE core router / OSPF ABR / iBGP speaker,,10.255.0.2
+WAN-EDGE-01,2911,JASDF wide-area transport edge (primary),,10.255.0.3
+WAN-EDGE-02,2911,JASDF wide-area transport edge (backup),,10.255.0.4
+REG-HUB-NORTH,3650-24PS,"NORTH regional WAN aggregation hub (L3), JADGE area hub",,10.255.2.1
+REG-HUB-CENTRAL,3650-24PS,"CENTRAL regional WAN aggregation hub (L3), JADGE area hub",,10.255.2.2
+REG-HUB-WEST,3650-24PS,"WEST regional WAN aggregation hub (L3), JADGE area hub",,10.255.2.3
+REG-HUB-SW,3650-24PS,"SW regional WAN aggregation hub (L3), JADGE area hub",,10.255.2.4
+DATALINK-AGG-01,3650-24PS,Tactical datalink aggregation A (Link-16 / SATCOM ground entry),,10.255.3.1
+DATALINK-AGG-02,3650-24PS,Tactical datalink aggregation B (Link-16 / SATCOM ground entry),,10.255.3.2
+TDL-GW-01,2911,"Link-16 / TADIL-J ground entry, channel group 1",,10.255.5.1
+SATCOM-GW-01,2911,"X/Ku-band SATCOM ground entry, terminal group 1",,10.255.6.1
+TDL-GW-02,2911,"Link-16 / TADIL-J ground entry, channel group 2",,10.255.5.2
+SATCOM-GW-02,2911,"X/Ku-band SATCOM ground entry, terminal group 2",,10.255.6.2
+TDL-GW-03,2911,"Link-16 / TADIL-J ground entry, channel group 3",,10.255.5.3
+SATCOM-GW-03,2911,"X/Ku-band SATCOM ground entry, terminal group 3",,10.255.6.3
+TDL-GW-04,2911,"Link-16 / TADIL-J ground entry, channel group 4",,10.255.5.4
+SATCOM-GW-04,2911,"X/Ku-band SATCOM ground entry, terminal group 4",,10.255.6.4
+COALITION-GW-01,ISR4331,Coalition / exercise boundary gateway (eBGP AS65002),,10.255.0.7
+MGMT-GW-01,ISR4331,Out-of-band management gateway / NOSC edge,,10.255.0.8
+JADGE-DC-CORE-01,3650-24PS,JADGE data-centre core switch A (L2/SVI),IRUMA,10.11.60.11
+JADGE-DC-CORE-02,3650-24PS,JADGE data-centre core switch B (L2/SVI),IRUMA,10.11.60.12
+JADGE-DC-ACC-01,2960-24TT,JADGE DC server access switch A,IRUMA,10.11.60.13
+JADGE-DC-ACC-02,2960-24TT,JADGE DC server access switch B,IRUMA,10.11.60.14
+JADGE-C2-SVR,Server-PT,JADGE air-defence C2 processor,IRUMA,10.11.60.21
+TRACK-FUSION-SVR,Server-PT,Multi-sensor track fusion engine,IRUMA,10.11.60.22
+LINK16-GW-SVR,Server-PT,Link-16 / TADIL-J gateway and translation,IRUMA,10.11.60.23
+RADAR-FUSION-SVR,Server-PT,Radar plot extraction and fusion,IRUMA,10.11.60.24
+MISSION-PLAN-SVR,Server-PT,ATO / ACO mission planning,IRUMA,10.11.60.25
+AIR-TASKING-SVR,Server-PT,Air tasking order distribution,IRUMA,10.11.60.26
+COP-SERVER,Server-PT,Common operational picture service,IRUMA,10.11.60.27
+DNS-SVR,Server-PT,Authoritative DNS - jasdf.mod.go.jp,IRUMA,10.11.60.17
+DNS-SVR-02,Server-PT,Secondary / forwarding DNS,IRUMA,10.11.60.18
+DHCP-SVR,Server-PT,Enterprise DHCP,IRUMA,10.11.60.19
+NTP-SVR,Server-PT,"Stratum-2 NTP, GPS disciplined",IRUMA,10.11.60.14
+SYSLOG-SVR,Server-PT,Central syslog / SIEM collector,IRUMA,10.11.60.15
+AAA-SVR,Server-PT,RADIUS + TACACS+ (Cisco ACS),IRUMA,10.11.60.16
+TFTP-SVR,Server-PT,Configuration and image archive,IRUMA,10.11.60.28
+MISSION-WEB-SVR,Server-PT,Mission portal (HTTPS),IRUMA,10.11.60.29
+MAIL-SVR,Server-PT,Official mail relay,IRUMA,10.11.60.30
+PKI-CA-SVR,Server-PT,JASDF internal certificate authority,IRUMA,10.11.60.31
+NETFLOW-SVR,Server-PT,NetFlow / IPFIX collector,IRUMA,10.11.60.32
+DATA-HISTORIAN,Server-PT,Track and mission data historian,IRUMA,10.11.60.33
+BACKUP-SVR,Server-PT,Nightly configuration backup,IRUMA,10.11.60.34
+CYBER-OBS-SVR,Server-PT,Behavioural anomaly detection,IRUMA,10.11.60.35
+FW-JADGE-CORE,5505,JADGE core enclave firewall (outside/inside),IRUMA,10.99.1.2
+FW-TDL-DMZ,5505,Tactical datalink / SATCOM DMZ firewall,IRUMA,10.99.3.2
+FW-COALITION,5505,Coalition cross-domain boundary firewall,IRUMA,10.99.6.2
+FW-MGMT,5505,Management enclave firewall,MGMT,10.99.8.2
+ADC-HQ-RTR-01,ISR4331,ADC HQ WAN router (active) / site ABR,YOKOTA,10.10.40.2
+ADC-HQ-RTR-02,ISR4331,ADC HQ WAN router (standby) / site ABR,YOKOTA,10.10.40.3
+ADC-HQ-DSW,3560-24PS,ADC HQ distribution switch (L2/SVI),YOKOTA,10.10.40.4
+ADC-HQ-ASW,2960-24TT,ADC HQ access switch,YOKOTA,10.10.40.6
+ADC-CDR-PC,PC-PT,Air Defense Commander console,YOKOTA,10.10.10.20
+ADC-OPS-PC,PC-PT,ADC operations officer console,YOKOTA,10.10.10.21
+ADC-INTEL-PC,PC-PT,ADC intelligence fusion console,YOKOTA,10.10.10.22
+ADC-LIAISON-PC,PC-PT,Coalition liaison console,YOKOTA,10.10.10.23
+ADC-COP-SVR,Server-PT,ADC strategic COP display server,YOKOTA,10.10.60.20
+NOSC-SW-01,2960-24TT,NOSC management access switch,MGMT,10.200.40.6
+NOSC-JUMP-SVR,Server-PT,Privileged-access jump host,MGMT,10.200.40.20
+NOSC-NMS-SVR,Server-PT,SNMP / fault management,MGMT,10.200.40.21
+NOSC-CYBER-OBS,CyberObserver,Cyber Observer behavioural IDS,MGMT,10.200.40.22
+NOSC-TAP-SNIFFER,Sniffer,Packet capture / monitoring tap,MGMT,10.200.40.23
+CRC-NORTH-RTR-01,ISR4331,CRC-NORTH C2 router (HSRP active) / site ABR,CRC-NORTH,10.12.40.2
+CRC-NORTH-RTR-02,ISR4331,CRC-NORTH C2 router (HSRP standby) / site ABR,CRC-NORTH,10.12.40.3
+CRC-NORTH-DSW,3560-24PS,CRC-NORTH distribution switch (L2),CRC-NORTH,10.12.40.4
+CRC-NORTH-TRACK-SVR,Server-PT,CRC-NORTH track server / display processor,CRC-NORTH,10.12.60.20
+CRC-NORTH-DISPLAY-SVR,Server-PT,CRC-NORTH operator display / HMI server,CRC-NORTH,10.12.60.21
+CRC-NORTH-ASO-PC,PC-PT,Air Surveillance Officer console,CRC-NORTH,10.12.10.20
+CRC-NORTH-WC-PC,PC-PT,Weapons Controller console,CRC-NORTH,10.12.10.21
+CRC-NORTH-SDO-PC,PC-PT,Senior Duty Officer console,CRC-NORTH,10.12.10.22
+CRC-CENTRAL-RTR-01,ISR4331,CRC-CENTRAL C2 router (HSRP active) / site ABR,CRC-CENTRAL,10.36.40.2
+CRC-CENTRAL-RTR-02,ISR4331,CRC-CENTRAL C2 router (HSRP standby) / site ABR,CRC-CENTRAL,10.36.40.3
+CRC-CENTRAL-DSW,3560-24PS,CRC-CENTRAL distribution switch (L2),CRC-CENTRAL,10.36.40.4
+CRC-CENTRAL-TRACK-SVR,Server-PT,CRC-CENTRAL track server / display processor,CRC-CENTRAL,10.36.60.20
+CRC-CENTRAL-DISPLAY-SVR,Server-PT,CRC-CENTRAL operator display / HMI server,CRC-CENTRAL,10.36.60.21
+CRC-CENTRAL-ASO-PC,PC-PT,Air Surveillance Officer console,CRC-CENTRAL,10.36.10.20
+CRC-CENTRAL-WC-PC,PC-PT,Weapons Controller console,CRC-CENTRAL,10.36.10.21
+CRC-CENTRAL-SDO-PC,PC-PT,Senior Duty Officer console,CRC-CENTRAL,10.36.10.22
+CRC-WEST-RTR-01,ISR4331,CRC-WEST C2 router (HSRP active) / site ABR,CRC-WEST,10.13.40.2
+CRC-WEST-RTR-02,ISR4331,CRC-WEST C2 router (HSRP standby) / site ABR,CRC-WEST,10.13.40.3
+CRC-WEST-DSW,3560-24PS,CRC-WEST distribution switch (L2),CRC-WEST,10.13.40.4
+CRC-WEST-TRACK-SVR,Server-PT,CRC-WEST track server / display processor,CRC-WEST,10.13.60.20
+CRC-WEST-DISPLAY-SVR,Server-PT,CRC-WEST operator display / HMI server,CRC-WEST,10.13.60.21
+CRC-WEST-ASO-PC,PC-PT,Air Surveillance Officer console,CRC-WEST,10.13.10.20
+CRC-WEST-WC-PC,PC-PT,Weapons Controller console,CRC-WEST,10.13.10.21
+CRC-WEST-SDO-PC,PC-PT,Senior Duty Officer console,CRC-WEST,10.13.10.22
+CRC-SW-RTR-01,ISR4331,CRC-SW C2 router (HSRP active) / site ABR,CRC-SW,10.14.40.2
+CRC-SW-RTR-02,ISR4331,CRC-SW C2 router (HSRP standby) / site ABR,CRC-SW,10.14.40.3
+CRC-SW-DSW,3560-24PS,CRC-SW distribution switch (L2),CRC-SW,10.14.40.4
+CRC-SW-TRACK-SVR,Server-PT,CRC-SW track server / display processor,CRC-SW,10.14.60.20
+CRC-SW-DISPLAY-SVR,Server-PT,CRC-SW operator display / HMI server,CRC-SW,10.14.60.21
+CRC-SW-ASO-PC,PC-PT,Air Surveillance Officer console,CRC-SW,10.14.10.20
+CRC-SW-WC-PC,PC-PT,Weapons Controller console,CRC-SW,10.14.10.21
+CRC-SW-SDO-PC,PC-PT,Senior Duty Officer console,CRC-SW,10.14.10.22
+RDR-WAKKANAI-RTR,IR1101,"J/FPS-3 radar site router - Wakkanai, Hokkaido - northern approach",WAKKANAI,10.41.40.2
+RDR-WAKKANAI-SW,IE-9320,J/FPS-3 radar site industrial switch,WAKKANAI,10.41.80.3
+RDR-WAKKANAI-RSP,Server-PT,J/FPS-3 radar signal processor,WAKKANAI,10.41.80.20
+RDR-WAKKANAI-OPS,PC-PT,J/FPS-3 radar site operator console,WAKKANAI,10.41.80.21
+RDR-NEMURO-RTR,IR1101,"J/FPS-3 radar site router - Nemuro, Hokkaido - Nemuro Strait",NEMURO,10.42.40.2
+RDR-NEMURO-SW,IE-9320,J/FPS-3 radar site industrial switch,NEMURO,10.42.80.3
+RDR-NEMURO-RSP,Server-PT,J/FPS-3 radar signal processor,NEMURO,10.42.80.20
+RDR-NEMURO-OPS,PC-PT,J/FPS-3 radar site operator console,NEMURO,10.42.80.21
+RDR-SHIBETSU-RTR,IR1101,"J/FPS-3 radar site router - Shibetsu, Hokkaido",SHIBETSU,10.43.40.2
+RDR-SHIBETSU-SW,IE-9320,J/FPS-3 radar site industrial switch,SHIBETSU,10.43.80.3
+RDR-SHIBETSU-RSP,Server-PT,J/FPS-3 radar signal processor,SHIBETSU,10.43.80.20
+RDR-SHIBETSU-OPS,PC-PT,J/FPS-3 radar site operator console,SHIBETSU,10.43.80.21
+RDR-OKUSHIRI-RTR,IR1101,"J/FPS-3 radar site router - Okushiri Island, Sea of Japan",OKUSHIRI,10.44.40.2
+RDR-OKUSHIRI-SW,IE-9320,J/FPS-3 radar site industrial switch,OKUSHIRI,10.44.80.3
+RDR-OKUSHIRI-RSP,Server-PT,J/FPS-3 radar signal processor,OKUSHIRI,10.44.80.20
+RDR-OKUSHIRI-OPS,PC-PT,J/FPS-3 radar site operator console,OKUSHIRI,10.44.80.21
+RDR-TOBETSU-RTR,IR1101,"J/FPS-3 radar site router - Tobetsu, Hokkaido",TOBETSU,10.45.40.2
+RDR-TOBETSU-SW,IE-9320,J/FPS-3 radar site industrial switch,TOBETSU,10.45.80.3
+RDR-TOBETSU-RSP,Server-PT,J/FPS-3 radar signal processor,TOBETSU,10.45.80.20
+RDR-TOBETSU-OPS,PC-PT,J/FPS-3 radar site operator console,TOBETSU,10.45.80.21
+RDR-OMINATO-RTR,IR1101,"J/FPS-3 radar site router - Ominato, Aomori - Tsugaru Strait",OMINATO,10.46.40.2
+RDR-OMINATO-SW,IE-9320,J/FPS-3 radar site industrial switch,OMINATO,10.46.80.3
+RDR-OMINATO-RSP,Server-PT,J/FPS-3 radar signal processor,OMINATO,10.46.80.20
+RDR-OMINATO-OPS,PC-PT,J/FPS-3 radar site operator console,OMINATO,10.46.80.21
+RDR-SADO-RTR,IR1101,"J/FPS-3 radar site router - Sado Island, Niigata",SADO,10.47.40.2
+RDR-SADO-SW,IE-9320,J/FPS-3 radar site industrial switch,SADO,10.47.80.3
+RDR-SADO-RSP,Server-PT,J/FPS-3 radar signal processor,SADO,10.47.80.20
+RDR-SADO-OPS,PC-PT,J/FPS-3 radar site operator console,SADO,10.47.80.21
+RDR-WAJIMA-RTR,IR1101,"J/FPS-5 radar site router - Wajima, Noto Peninsula - mobile J/FPS-5",WAJIMA,10.48.40.2
+RDR-WAJIMA-SW,IE-9320,J/FPS-5 radar site industrial switch,WAJIMA,10.48.80.3
+RDR-WAJIMA-RSP,Server-PT,J/FPS-5 radar signal processor,WAJIMA,10.48.80.20
+RDR-WAJIMA-OPS,PC-PT,J/FPS-5 radar site operator console,WAJIMA,10.48.80.21
+RDR-OMAEZAKI-RTR,IR1101,"J/FPS-3 radar site router - Omaezaki, Shizuoka - Pacific approach",OMAEZAKI,10.49.40.2
+RDR-OMAEZAKI-SW,IE-9320,J/FPS-3 radar site industrial switch,OMAEZAKI,10.49.80.3
+RDR-OMAEZAKI-RSP,Server-PT,J/FPS-3 radar signal processor,OMAEZAKI,10.49.80.20
+RDR-TSUSHIMA-RTR,IR1101,"J/FPS-3 radar site router - Tsushima, Nagasaki - Korea Strait",TSUSHIMA,10.50.40.2
+RDR-TSUSHIMA-SW,IE-9320,J/FPS-3 radar site industrial switch,TSUSHIMA,10.50.80.3
+RDR-TSUSHIMA-RSP,Server-PT,J/FPS-3 radar signal processor,TSUSHIMA,10.50.80.20
+RDR-IKI-RTR,IR1101,"J/FPS-3 radar site router - Iki Island, Nagasaki",IKI,10.51.40.2
+RDR-IKI-SW,IE-9320,J/FPS-3 radar site industrial switch,IKI,10.51.80.3
+RDR-IKI-RSP,Server-PT,J/FPS-3 radar signal processor,IKI,10.51.80.20
+RDR-SEFURI-RTR,IR1101,"J/FPS-3 radar site router - Sefuri-san, Fukuoka - Kyushu",SEFURI,10.52.40.2
+RDR-SEFURI-SW,IE-9320,J/FPS-3 radar site industrial switch,SEFURI,10.52.80.3
+RDR-SEFURI-RSP,Server-PT,J/FPS-3 radar signal processor,SEFURI,10.52.80.20
+RDR-KUMEJIMA-RTR,IR1101,"J/FPS-5 radar site router - Kumejima, Okinawa",KUMEJIMA,10.53.40.2
+RDR-KUMEJIMA-SW,IE-9320,J/FPS-5 radar site industrial switch,KUMEJIMA,10.53.80.3
+RDR-KUMEJIMA-RSP,Server-PT,J/FPS-5 radar signal processor,KUMEJIMA,10.53.80.20
+RDR-MIYAKO-RTR,IR1101,"J/FPS-3Kai radar site router - Miyakojima, Okinawa - East China Sea gap",MIYAKO,10.54.40.2
+RDR-MIYAKO-SW,IE-9320,J/FPS-3Kai radar site industrial switch,MIYAKO,10.54.80.3
+RDR-MIYAKO-RSP,Server-PT,J/FPS-3Kai radar signal processor,MIYAKO,10.54.80.20
+RDR-YONAGUNI-RTR,IR1101,"J/FPS-7 radar site router - Yonaguni, Okinawa - south-western tip",YONAGUNI,10.55.40.2
+RDR-YONAGUNI-SW,IE-9320,J/FPS-7 radar site industrial switch,YONAGUNI,10.55.80.3
+RDR-YONAGUNI-RSP,Server-PT,J/FPS-7 radar signal processor,YONAGUNI,10.55.80.20
+RDR-OKINOERABU-RTR,IR1101,"J/FPS-5 radar site router - Okinoerabujima, Kagoshima",OKINOERABU,10.56.40.2
+RDR-OKINOERABU-SW,IE-9320,J/FPS-5 radar site industrial switch,OKINOERABU,10.56.80.3
+RDR-OKINOERABU-RSP,Server-PT,J/FPS-5 radar signal processor,OKINOERABU,10.56.80.20
+AB-HAMAMATSU-RTR,ISR4321,HAMAMATSU Air Base WAN router / site ABR,HAMAMATSU,10.26.40.2
+AB-HAMAMATSU-DSW,3560-24PS,HAMAMATSU Air Base distribution switch (L2),HAMAMATSU,10.26.40.3
+AB-HAMAMATSU-ASW,2960-24TT,HAMAMATSU Air Base access switch,HAMAMATSU,10.26.40.4
+AB-HAMAMATSU-OPS-PC,PC-PT,HAMAMATSU base operations console,HAMAMATSU,10.26.10.20
+AB-HAMAMATSU-MAINT-PC,PC-PT,HAMAMATSU avionics maintenance console,HAMAMATSU,10.26.20.20
+AB-HAMAMATSU-WLAN-AP,AccessPoint-PT,HAMAMATSU base WLAN access point,HAMAMATSU,
+AB-MISAWA-RTR,ISR4321,MISAWA Air Base WAN router / site ABR,MISAWA,10.27.40.2
+AB-MISAWA-DSW,3560-24PS,MISAWA Air Base distribution switch (L2),MISAWA,10.27.40.3
+AB-MISAWA-ASW,2960-24TT,MISAWA Air Base access switch,MISAWA,10.27.40.4
+AB-MISAWA-OPS-PC,PC-PT,MISAWA base operations console,MISAWA,10.27.10.20
+AB-MISAWA-MAINT-PC,PC-PT,MISAWA avionics maintenance console,MISAWA,10.27.20.20
+AB-MISAWA-WLAN-AP,AccessPoint-PT,MISAWA base WLAN access point,MISAWA,
+AB-KOMAKI-RTR,ISR4321,KOMAKI Air Base WAN router / site ABR,KOMAKI,10.28.40.2
+AB-KOMAKI-DSW,3560-24PS,KOMAKI Air Base distribution switch (L2),KOMAKI,10.28.40.3
+AB-KOMAKI-ASW,2960-24TT,KOMAKI Air Base access switch,KOMAKI,10.28.40.4
+AB-KOMAKI-OPS-PC,PC-PT,KOMAKI base operations console,KOMAKI,10.28.10.20
+AB-KOMAKI-MAINT-PC,PC-PT,KOMAKI avionics maintenance console,KOMAKI,10.28.20.20
+AB-KOMAKI-WLAN-AP,AccessPoint-PT,KOMAKI base WLAN access point,KOMAKI,
+AB-IRUMA-RTR,ISR4321,IRUMA Air Base WAN router / site ABR,IRUMA,10.29.40.2
+AB-IRUMA-DSW,3560-24PS,IRUMA Air Base distribution switch (L2),IRUMA,10.29.40.3
+AB-IRUMA-ASW,2960-24TT,IRUMA Air Base access switch,IRUMA,10.29.40.4
+AB-IRUMA-OPS-PC,PC-PT,IRUMA base operations console,IRUMA,10.29.10.20
+AB-IRUMA-MAINT-PC,PC-PT,IRUMA avionics maintenance console,IRUMA,10.29.20.20
+AB-IRUMA-WLAN-AP,AccessPoint-PT,IRUMA base WLAN access point,IRUMA,
+AB-NAHA-RTR,ISR4321,NAHA Air Base WAN router / site ABR,NAHA,10.30.40.2
+AB-NAHA-DSW,3560-24PS,NAHA Air Base distribution switch (L2),NAHA,10.30.40.3
+AB-NAHA-ASW,2960-24TT,NAHA Air Base access switch,NAHA,10.30.40.4
+AB-NAHA-OPS-PC,PC-PT,NAHA base operations console,NAHA,10.30.10.20
+AB-NAHA-MAINT-PC,PC-PT,NAHA avionics maintenance console,NAHA,10.30.20.20
+AB-NAHA-WLAN-AP,AccessPoint-PT,NAHA base WLAN access point,NAHA,
+AB-KASUGA-RTR,ISR4321,KASUGA Air Base WAN router / site ABR,KASUGA,10.31.40.2
+AB-KASUGA-DSW,3560-24PS,KASUGA Air Base distribution switch (L2),KASUGA,10.31.40.3
+AB-KASUGA-ASW,2960-24TT,KASUGA Air Base access switch,KASUGA,10.31.40.4
+AB-KASUGA-OPS-PC,PC-PT,KASUGA base operations console,KASUGA,10.31.10.20
+AB-KASUGA-MAINT-PC,PC-PT,KASUGA avionics maintenance console,KASUGA,10.31.20.20
+AB-KASUGA-WLAN-AP,AccessPoint-PT,KASUGA base WLAN access point,KASUGA,
+AB-CHITOSE-RTR,ISR4321,CHITOSE Air Base WAN router / site ABR,CHITOSE,10.32.40.2
+AB-CHITOSE-DSW,3560-24PS,CHITOSE Air Base distribution switch (L2),CHITOSE,10.32.40.3
+AB-CHITOSE-ASW,2960-24TT,CHITOSE Air Base access switch,CHITOSE,10.32.40.4
+AB-CHITOSE-OPS-PC,PC-PT,CHITOSE base operations console,CHITOSE,10.32.10.20
+AB-CHITOSE-MAINT-PC,PC-PT,CHITOSE avionics maintenance console,CHITOSE,10.32.20.20
+AB-CHITOSE-WLAN-AP,AccessPoint-PT,CHITOSE base WLAN access point,CHITOSE,
+AB-HYAKURI-RTR,ISR4321,HYAKURI Air Base WAN router / site ABR,HYAKURI,10.33.40.2
+AB-HYAKURI-DSW,3560-24PS,HYAKURI Air Base distribution switch (L2),HYAKURI,10.33.40.3
+AB-HYAKURI-ASW,2960-24TT,HYAKURI Air Base access switch,HYAKURI,10.33.40.4
+AB-HYAKURI-OPS-PC,PC-PT,HYAKURI base operations console,HYAKURI,10.33.10.20
+AB-HYAKURI-MAINT-PC,PC-PT,HYAKURI avionics maintenance console,HYAKURI,10.33.20.20
+AB-HYAKURI-WLAN-AP,AccessPoint-PT,HYAKURI base WLAN access point,HYAKURI,
+AB-KOMATSU-RTR,ISR4321,KOMATSU Air Base WAN router / site ABR,KOMATSU,10.34.40.2
+AB-KOMATSU-DSW,3560-24PS,KOMATSU Air Base distribution switch (L2),KOMATSU,10.34.40.3
+AB-KOMATSU-ASW,2960-24TT,KOMATSU Air Base access switch,KOMATSU,10.34.40.4
+AB-KOMATSU-OPS-PC,PC-PT,KOMATSU base operations console,KOMATSU,10.34.10.20
+AB-KOMATSU-MAINT-PC,PC-PT,KOMATSU avionics maintenance console,KOMATSU,10.34.20.20
+AB-KOMATSU-WLAN-AP,AccessPoint-PT,KOMATSU base WLAN access point,KOMATSU,
+AB-NYUTABARU-RTR,ISR4321,NYUTABARU Air Base WAN router / site ABR,NYUTABARU,10.35.40.2
+AB-NYUTABARU-DSW,3560-24PS,NYUTABARU Air Base distribution switch (L2),NYUTABARU,10.35.40.3
+AB-NYUTABARU-ASW,2960-24TT,NYUTABARU Air Base access switch,NYUTABARU,10.35.40.4
+AB-NYUTABARU-OPS-PC,PC-PT,NYUTABARU base operations console,NYUTABARU,10.35.10.20
+AB-NYUTABARU-MAINT-PC,PC-PT,NYUTABARU avionics maintenance console,NYUTABARU,10.35.20.20
+AB-NYUTABARU-WLAN-AP,AccessPoint-PT,NYUTABARU base WLAN access point,NYUTABARU,
+E767-01-MR,2911,E-767 AWACS mission router / airborne LAN gateway,E767-01,10.61.40.1
+E767-01-SW,2960-24TT,E-767 AWACS onboard mission LAN switch,E767-01,10.61.40.2
+E767-01-MC,Server-PT,E-767 AWACS mission computer - AN/APY-2 signal processor,E767-01,10.61.20.10
+E767-01-WLAN-AP,AccessPoint-PT,E-767 AWACS onboard wireless access point,E767-01,
+E767-01-WC-PC,PC-PT,E-767 AWACS airborne weapons controller console,E767-01,10.61.10.20
+E767-02-MR,2911,E-767 AWACS mission router / airborne LAN gateway,E767-02,10.62.40.1
+E767-02-SW,2960-24TT,E-767 AWACS onboard mission LAN switch,E767-02,10.62.40.2
+E767-02-MC,Server-PT,E-767 AWACS mission computer - AN/APY-2 signal processor,E767-02,10.62.20.10
+E767-02-WLAN-AP,AccessPoint-PT,E-767 AWACS onboard wireless access point,E767-02,
+E767-02-WC-PC,PC-PT,E-767 AWACS airborne weapons controller console,E767-02,10.62.10.20
+E767-03-MR,2911,E-767 AWACS mission router / airborne LAN gateway,E767-03,10.63.40.1
+E767-03-SW,2960-24TT,E-767 AWACS onboard mission LAN switch,E767-03,10.63.40.2
+E767-03-MC,Server-PT,E-767 AWACS mission computer - AN/APY-2 signal processor,E767-03,10.63.20.10
+E767-03-WLAN-AP,AccessPoint-PT,E-767 AWACS onboard wireless access point,E767-03,
+E767-03-WC-PC,PC-PT,E-767 AWACS airborne weapons controller console,E767-03,10.63.10.20
+E767-04-MR,2911,E-767 AWACS mission router / airborne LAN gateway,E767-04,10.64.40.1
+E767-04-SW,2960-24TT,E-767 AWACS onboard mission LAN switch,E767-04,10.64.40.2
+E767-04-MC,Server-PT,E-767 AWACS mission computer - AN/APY-2 signal processor,E767-04,10.64.20.10
+E767-04-WLAN-AP,AccessPoint-PT,E-767 AWACS onboard wireless access point,E767-04,
+E767-04-WC-PC,PC-PT,E-767 AWACS airborne weapons controller console,E767-04,10.64.10.20
+E2D-01-MR,2911,E-2D Advanced Hawkeye mission router / airborne LAN gateway,E2D-01,10.65.40.1
+E2D-01-SW,2960-24TT,E-2D Advanced Hawkeye onboard mission LAN switch,E2D-01,10.65.40.2
+E2D-01-MC,Server-PT,E-2D Advanced Hawkeye mission computer - AN/APY-9 signal processor,E2D-01,10.65.20.10
+E2D-01-WLAN-AP,AccessPoint-PT,E-2D Advanced Hawkeye onboard wireless access point,E2D-01,
+E2D-01-WC-PC,PC-PT,E-2D Advanced Hawkeye airborne weapons controller console,E2D-01,10.65.10.20
+E2D-02-MR,2911,E-2D Advanced Hawkeye mission router / airborne LAN gateway,E2D-02,10.66.40.1
+E2D-02-SW,2960-24TT,E-2D Advanced Hawkeye onboard mission LAN switch,E2D-02,10.66.40.2
+E2D-02-MC,Server-PT,E-2D Advanced Hawkeye mission computer - AN/APY-9 signal processor,E2D-02,10.66.20.10
+E2D-02-WLAN-AP,AccessPoint-PT,E-2D Advanced Hawkeye onboard wireless access point,E2D-02,
+E2D-02-WC-PC,PC-PT,E-2D Advanced Hawkeye airborne weapons controller console,E2D-02,10.66.10.20
+E2D-03-MR,2911,E-2D Advanced Hawkeye mission router / airborne LAN gateway,E2D-03,10.67.40.1
+E2D-03-SW,2960-24TT,E-2D Advanced Hawkeye onboard mission LAN switch,E2D-03,10.67.40.2
+E2D-03-MC,Server-PT,E-2D Advanced Hawkeye mission computer - AN/APY-9 signal processor,E2D-03,10.67.20.10
+E2D-03-WLAN-AP,AccessPoint-PT,E-2D Advanced Hawkeye onboard wireless access point,E2D-03,
+E2D-03-WC-PC,PC-PT,E-2D Advanced Hawkeye airborne weapons controller console,E2D-03,10.67.10.20
+E2D-04-MR,2911,E-2D Advanced Hawkeye mission router / airborne LAN gateway,E2D-04,10.68.40.1
+E2D-04-SW,2960-24TT,E-2D Advanced Hawkeye onboard mission LAN switch,E2D-04,10.68.40.2
+E2D-04-MC,Server-PT,E-2D Advanced Hawkeye mission computer - AN/APY-9 signal processor,E2D-04,10.68.20.10
+E2D-04-WLAN-AP,AccessPoint-PT,E-2D Advanced Hawkeye onboard wireless access point,E2D-04,
+E2D-04-WC-PC,PC-PT,E-2D Advanced Hawkeye airborne weapons controller console,E2D-04,10.68.10.20
+E2D-05-MR,2911,E-2D Advanced Hawkeye mission router / airborne LAN gateway,E2D-05,10.69.40.1
+E2D-05-SW,2960-24TT,E-2D Advanced Hawkeye onboard mission LAN switch,E2D-05,10.69.40.2
+E2D-05-MC,Server-PT,E-2D Advanced Hawkeye mission computer - AN/APY-9 signal processor,E2D-05,10.69.20.10
+E2D-05-WLAN-AP,AccessPoint-PT,E-2D Advanced Hawkeye onboard wireless access point,E2D-05,
+E2D-05-WC-PC,PC-PT,E-2D Advanced Hawkeye airborne weapons controller console,E2D-05,10.69.10.20
+E2D-06-MR,2911,E-2D Advanced Hawkeye mission router / airborne LAN gateway,E2D-06,10.70.40.1
+E2D-06-SW,2960-24TT,E-2D Advanced Hawkeye onboard mission LAN switch,E2D-06,10.70.40.2
+E2D-06-MC,Server-PT,E-2D Advanced Hawkeye mission computer - AN/APY-9 signal processor,E2D-06,10.70.20.10
+E2D-06-WLAN-AP,AccessPoint-PT,E-2D Advanced Hawkeye onboard wireless access point,E2D-06,
+E2D-06-WC-PC,PC-PT,E-2D Advanced Hawkeye airborne weapons controller console,E2D-06,10.70.10.20
+E2C-01-MR,2911,E-2C Hawkeye mission router / airborne LAN gateway,E2C-01,10.71.40.1
+E2C-01-SW,2960-24TT,E-2C Hawkeye onboard mission LAN switch,E2C-01,10.71.40.2
+E2C-01-MC,Server-PT,E-2C Hawkeye mission computer - AN/APS-145 signal processor,E2C-01,10.71.20.10
+E2C-01-WLAN-AP,AccessPoint-PT,E-2C Hawkeye onboard wireless access point,E2C-01,
+E2C-02-MR,2911,E-2C Hawkeye mission router / airborne LAN gateway,E2C-02,10.72.40.1
+E2C-02-SW,2960-24TT,E-2C Hawkeye onboard mission LAN switch,E2C-02,10.72.40.2
+E2C-02-MC,Server-PT,E-2C Hawkeye mission computer - AN/APS-145 signal processor,E2C-02,10.72.20.10
+E2C-02-WLAN-AP,AccessPoint-PT,E-2C Hawkeye onboard wireless access point,E2C-02,
+E2C-03-MR,2911,E-2C Hawkeye mission router / airborne LAN gateway,E2C-03,10.73.40.1
+E2C-03-SW,2960-24TT,E-2C Hawkeye onboard mission LAN switch,E2C-03,10.73.40.2
+E2C-03-MC,Server-PT,E-2C Hawkeye mission computer - AN/APS-145 signal processor,E2C-03,10.73.20.10
+E2C-03-WLAN-AP,AccessPoint-PT,E-2C Hawkeye onboard wireless access point,E2C-03,
+E2C-04-MR,2911,E-2C Hawkeye mission router / airborne LAN gateway,E2C-04,10.74.40.1
+E2C-04-SW,2960-24TT,E-2C Hawkeye onboard mission LAN switch,E2C-04,10.74.40.2
+E2C-04-MC,Server-PT,E-2C Hawkeye mission computer - AN/APS-145 signal processor,E2C-04,10.74.20.10
+E2C-04-WLAN-AP,AccessPoint-PT,E-2C Hawkeye onboard wireless access point,E2C-04,
+RC2-01-MR,2911,RC-2 ELINT mission router / airborne LAN gateway,RC2-01,10.75.40.1
+RC2-01-SW,2960-24TT,RC-2 ELINT onboard mission LAN switch,RC2-01,10.75.40.2
+RC2-01-MC,Server-PT,RC-2 ELINT mission computer - ELINT suite signal processor,RC2-01,10.75.20.10
+RC2-01-WLAN-AP,AccessPoint-PT,RC-2 ELINT onboard wireless access point,RC2-01,
+RC2-02-MR,2911,RC-2 ELINT mission router / airborne LAN gateway,RC2-02,10.76.40.1
+RC2-02-SW,2960-24TT,RC-2 ELINT onboard mission LAN switch,RC2-02,10.76.40.2
+RC2-02-MC,Server-PT,RC-2 ELINT mission computer - ELINT suite signal processor,RC2-02,10.76.20.10
+RC2-02-WLAN-AP,AccessPoint-PT,RC-2 ELINT onboard wireless access point,RC2-02,
+PARTNER-RTR-01,ISR4331,Allied coalition partner edge router (eBGP AS65002),,10.254.0.2
+PARTNER-SW-01,2960-24TT,Coalition partner LAN switch,,10.254.0.3
+PARTNER-LIAISON-PC,PC-PT,Coalition liaison officer workstation,,10.254.0.20

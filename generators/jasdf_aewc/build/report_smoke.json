@@ -1,0 +1,49 @@
+{
+ "profile": "smoke",
+ "devices": 134,
+ "links": 157,
+ "routed_ports": 72,
+ "dns_records": 131,
+ "wlans": 0,
+ "by_model": {
+  "Server-PT": 39,
+  "PC-PT": 21,
+  "ISR4331": 15,
+  "2911": 13,
+  "2960-24TT": 11,
+  "3650-24PS": 10,
+  "3560-24PS": 8,
+  "5505": 4,
+  "IR1101": 4,
+  "IE-9320": 4,
+  "ISR4321": 3,
+  "CyberObserver": 1,
+  "Sniffer": 1
+ },
+ "seed_removed": [
+  "Server",
+  "Power Distribution Device0",
+  "PC-B",
+  "PC-A",
+  "SW1",
+  "R2",
+  "R1"
+ ],
+ "serial_ports_clocked": 14,
+ "stale_nic_fields_cleared": 116,
+ "template_leftovers_removed": 269,
+ "template_leftovers_detail": {
+  "aaa-clients": 38,
+  "aaa-users": 38,
+  "dhcp-pools": 78,
+  "ftp-accounts": 37,
+  "dhcp-port-bindings": 78
+ },
+ "startup_config_lines_cleared": 584,
+ "ports_switched_on_by_repair": 100,
+ "devices_switched_on_by_repair": 0,
+ "devices_with_power_true": 134,
+ "output": "out/JASDF_AEWC_JADGE_smoke.pkt",
+ "size_bytes": 618311,
+ "sha256": "38e898562dc1cff0e10dcffdb5526fdbb862d3174926752e59be6341e2d82e20"
+}

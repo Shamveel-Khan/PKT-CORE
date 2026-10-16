@@ -1,0 +1,438 @@
+{
+  "format": "pkt-core/netbox-inventory",
+  "lab": {
+    "root_tag": "PACKETTRACER5",
+    "version": "9.0.1.0858",
+    "is_activity": false,
+    "devices": 7,
+    "links": 5,
+    "clusters": 1
+  },
+  "devices": [
+    {
+      "name": "Server",
+      "device_type": {
+        "manufacturer": "Cisco",
+        "model": "Server-PT"
+      },
+      "device_role": "Server",
+      "position": {
+        "x": 99.5,
+        "y": 480.0
+      },
+      "cluster": "1-1",
+      "interfaces": [
+        {
+          "name": "iface0",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0090.2158.A228",
+          "speed": 100000,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "Power Distribution Device0",
+      "device_type": {
+        "manufacturer": "Cisco",
+        "model": "Power Distribution Device"
+      },
+      "device_role": "Power Distribution Device",
+      "position": {
+        "x": 3899.0,
+        "y": 3900.0
+      },
+      "cluster": "1-1",
+      "interfaces": []
+    },
+    {
+      "name": "PC-B",
+      "device_type": {
+        "manufacturer": "Cisco",
+        "model": "PC-PT"
+      },
+      "device_role": "Pc",
+      "position": {
+        "x": 99.5,
+        "y": 400.0
+      },
+      "cluster": "1-1",
+      "interfaces": [
+        {
+          "name": "iface0",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0007.EC9C.CC63",
+          "speed": 100000,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "PC-A",
+      "device_type": {
+        "manufacturer": "Cisco",
+        "model": "PC-PT"
+      },
+      "device_role": "Pc",
+      "position": {
+        "x": 326.5,
+        "y": 400.0
+      },
+      "cluster": "1-1",
+      "interfaces": [
+        {
+          "name": "iface0",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0060.3E09.9625",
+          "speed": 100000,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "SW1",
+      "device_type": {
+        "manufacturer": "Cisco",
+        "model": "2960-24TT"
+      },
+      "device_role": "Switch",
+      "position": {
+        "x": 99.0,
+        "y": 250.0
+      },
+      "cluster": "1-1",
+      "interfaces": [
+        {
+          "name": "iface0",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B601",
+          "speed": 100000,
+          "enabled": true
+        },
+        {
+          "name": "iface1",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B602",
+          "speed": 100000,
+          "enabled": true
+        },
+        {
+          "name": "iface2",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B603",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface3",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B604",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface4",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B605",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface5",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B606",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface6",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B607",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface7",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B608",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface8",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B609",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface9",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B60A",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface10",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B60B",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface11",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B60C",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface12",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B60D",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface13",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B60E",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface14",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B60F",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface15",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B610",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface16",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B611",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface17",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B612",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface18",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B613",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface19",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B614",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface20",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B615",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface21",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B616",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface22",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B617",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface23",
+          "type": "eCopperFastEthernet",
+          "mac_address": "0040.0B1E.B618",
+          "speed": 100000,
+          "enabled": false
+        },
+        {
+          "name": "iface24",
+          "type": "eCopperGigabitEthernet",
+          "mac_address": "0040.0B1E.B619",
+          "speed": 1000000,
+          "enabled": false
+        },
+        {
+          "name": "iface25",
+          "type": "eCopperGigabitEthernet",
+          "mac_address": "0040.0B1E.B61A",
+          "speed": 1000000,
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "name": "R2",
+      "device_type": {
+        "manufacturer": "Cisco",
+        "model": "2911"
+      },
+      "device_role": "Router",
+      "position": {
+        "x": 99.5,
+        "y": 100.0
+      },
+      "cluster": "1-1",
+      "interfaces": [
+        {
+          "name": "iface0",
+          "type": "eCopperGigabitEthernet",
+          "mac_address": "0060.705D.3701",
+          "speed": 1000000,
+          "enabled": true
+        },
+        {
+          "name": "iface1",
+          "type": "eCopperGigabitEthernet",
+          "mac_address": "0060.705D.3702",
+          "speed": 100000,
+          "enabled": true
+        },
+        {
+          "name": "iface2",
+          "type": "eCopperGigabitEthernet",
+          "mac_address": "0060.705D.3703",
+          "speed": 100000,
+          "enabled": true
+        },
+        {
+          "name": "iface3",
+          "type": "eSmartSerial",
+          "mac_address": "0060.705D.3701",
+          "speed": 1544,
+          "enabled": true
+        },
+        {
+          "name": "iface4",
+          "type": "eSmartSerial",
+          "mac_address": "0060.705D.3701",
+          "speed": 1544,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "name": "R1",
+      "device_type": {
+        "manufacturer": "Cisco",
+        "model": "2911"
+      },
+      "device_role": "Router",
+      "position": {
+        "x": 326.5,
+        "y": 100.0
+      },
+      "cluster": "1-1",
+      "interfaces": [
+        {
+          "name": "iface0",
+          "type": "eCopperGigabitEthernet",
+          "mac_address": "000A.F336.4401",
+          "speed": 100000,
+          "enabled": true
+        },
+        {
+          "name": "iface1",
+          "type": "eCopperGigabitEthernet",
+          "mac_address": "000A.F336.4402",
+          "speed": 1000000,
+          "enabled": true
+        },
+        {
+          "name": "iface2",
+          "type": "eCopperGigabitEthernet",
+          "mac_address": "000A.F336.4403",
+          "speed": 1000000,
+          "enabled": false
+        }
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "type": "eStraightThrough",
+      "a": {
+        "device": "R2",
+        "port": "GigabitEthernet0/2"
+      },
+      "b": {
+        "device": "Server",
+        "port": "FastEthernet0"
+      },
+      "length": 1.0
+    },
+    {
+      "type": "eStraightThrough",
+      "a": {
+        "device": "R2",
+        "port": "GigabitEthernet0/1"
+      },
+      "b": {
+        "device": "PC-B",
+        "port": "FastEthernet0"
+      },
+      "length": 45.2756
+    },
+    {
+      "type": "eStraightThrough",
+      "a": {
+        "device": "R1",
+        "port": "GigabitEthernet0/1"
+      },
+      "b": {
+        "device": "R2",
+        "port": "GigabitEthernet0/0"
+      },
+      "length": 1.0
+    },
+    {
+      "type": "eStraightThrough",
+      "a": {
+        "device": "SW1",
+        "port": "FastEthernet0/1"
+      },
+      "b": {
+        "device": "R1",
+        "port": "GigabitEthernet0/0"
+      },
+      "length": 1.0
+    },
+    {
+      "type": "eStraightThrough",
+      "a": {
+        "device": "SW1",
+        "port": "FastEthernet0/2"
+      },
+      "b": {
+        "device": "PC-A",
+        "port": "FastEthernet0"
+      },
+      "length": 40.3148
+    }
+  ]
+}

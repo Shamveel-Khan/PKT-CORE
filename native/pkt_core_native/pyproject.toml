@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-FileCopyrightText: 2026 pkt-core contributors
+#
+# maturin build configuration for the pkt_core_native accelerator.
+
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "pkt-core-native"
+version = "0.1.0"
+description = "Optional Rust accelerator for pkt-core's crypto hot path (Twofish, Serpent, CAST-256)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "pkt-core contributors" }]
+classifiers = [
+  "Programming Language :: Rust",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "License :: OSI Approved :: GNU General Public License v3.0 or later (GPLv3+)",
+]
+
+[tool.maturin]
+# One abi3 wheel covers every CPython >= 3.10 (the pyo3 dependency already
+# enables the `abi3-py310` feature; nothing extra is needed here).
+module-name = "pkt_core_native"
