@@ -9,7 +9,7 @@ This project reverse-engineers the Packet Tracer container format and provides a
 [![No Packet Tracer needed](https://img.shields.io/badge/Packet_Tracer-not_required-32d74b.svg)](#quick-start)
 [![Cisco Packet Tracer](https://img.shields.io/badge/Cisco_Packet_Tracer-1BA0D7?style=flat&logo=cisco&logoColor=white)](#overview)
 
-> **`pkt-core v0.2.1` is published on PyPI**: [https://pypi.org/project/pkt-core/](https://pypi.org/project/pkt-core/)
+> **`pkt-core v0.2.2` is published on PyPI**: [https://pypi.org/project/pkt-core/](https://pypi.org/project/pkt-core/)
 
 ## Overview
 
