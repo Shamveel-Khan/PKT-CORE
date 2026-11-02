@@ -9,7 +9,7 @@ This project reverse-engineers the Packet Tracer container format and provides a
 [![No Packet Tracer needed](https://img.shields.io/badge/Packet_Tracer-not_required-32d74b.svg)](#quick-start)
 [![Cisco Packet Tracer](https://img.shields.io/badge/Cisco_Packet_Tracer-1BA0D7?style=flat&logo=cisco&logoColor=white)](#overview)
 
-> **`pkt-core v0.2.0` is published on PyPI**: [https://pypi.org/project/pkt-core/](https://pypi.org/project/pkt-core/)
+> **`pkt-core v0.2.1` is published on PyPI**: [https://pypi.org/project/pkt-core/](https://pypi.org/project/pkt-core/)
 
 ## Overview
 
@@ -275,4 +275,20 @@ Key facts for anyone generating files (details in the scene-graph notes):
   archival.
 * **Do not** use this to obtain, alter, or submit assessment/competition answer
   keys.  That is cheating and is out of scope.
+
+## License, attribution, and PKT-CORE changes
+
+PKT-CORE is a modified distribution of
+[aacanadaa/packet-tracer-pkt-format](https://github.com/aacanadaa/packet-tracer-pkt-format),
+whose original author is **aacanadaa**.  The upstream project's copyright
+notices are retained in the applicable source files and in this distribution's
+[`NOTICE`](NOTICE) file.
+
+PKT-CORE packages that work as an installable, type-safe Python SDK, including
+the `pkt_core` public API, builders, CLI, packaged resources, tests, and
+documentation.  These additions and other PKT-CORE-specific changes are
+released as a modified work under the same **GNU General Public License,
+version 3 or any later version (GPL-3.0-or-later)**.  See [`LICENSE`](LICENSE)
+for the complete license text and [`NOTICE`](NOTICE) for source and change
+attribution.
 

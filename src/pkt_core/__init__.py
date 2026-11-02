@@ -94,7 +94,7 @@ def export(lab: Any, fmt: str = "graphviz") -> str:
     return _export(lab, fmt)
 
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 
 __all__ = [
     # Top-level builders

@@ -43,7 +43,7 @@ plumbing, and it is the one that reports "corrupted Physical Workspace data".
 
 ## Bootstrap & Installation
 
-`pkt-core v0.2.0` is published on PyPI: [https://pypi.org/project/pkt-core/](https://pypi.org/project/pkt-core/)
+`pkt-core v0.2.1` is published on PyPI: [https://pypi.org/project/pkt-core/](https://pypi.org/project/pkt-core/)
 
 > [!IMPORTANT]
 > **Package vs Import Name:**

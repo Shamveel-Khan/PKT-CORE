@@ -1,0 +1,21 @@
+PKT-CORE attribution notice
+============================
+
+PKT-CORE is a modified distribution based on the original project
+"packet-tracer-pkt-format" by aacanadaa:
+
+  https://github.com/aacanadaa/packet-tracer-pkt-format
+
+Copyright notices in upstream source files, including notices naming
+"aacanadaa", are retained and continue to apply to their respective material.
+
+PKT-CORE modifications include packaging the implementation as the
+installable ``pkt_core`` Python SDK, its typed public API, builders, command
+line interface, packaged resources, tests, and project documentation.
+
+The complete combined work, including PKT-CORE modifications, is licensed
+under the GNU General Public License, version 3 or (at your option) any later
+version (GPL-3.0-or-later).  A copy of that license is provided in LICENSE.
+
+This notice identifies origin and modification status; it does not replace or
+alter any copyright notice or license term in the source files.

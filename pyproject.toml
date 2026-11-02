@@ -4,12 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pkt-core"
-version = "0.2.0"
+version = "0.2.1"
 description = "Type-safe Python SDK and reverse-engineering codec for Cisco Packet Tracer .pkt and .pka files"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "GPL-3.0-or-later"
+license-files = ["LICENSE", "NOTICE"]
 authors = [{ name = "aacanadaa" }]
+maintainers = [{ name = "Shamveel-Khan" }]
 keywords = ["packet-tracer", "pkt", "pka", "cisco", "file-format", "twofish", "eax", "reverse-engineering", "networking", "ccna"]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -29,6 +31,11 @@ classifiers = [
 dependencies = [
   "pydantic>=2.0.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/Shamveel-Khan/PKT-CORE"
+Repository = "https://github.com/Shamveel-Khan/PKT-CORE"
+"Original source" = "https://github.com/aacanadaa/packet-tracer-pkt-format"
 
 [project.optional-dependencies]
 dev = [
